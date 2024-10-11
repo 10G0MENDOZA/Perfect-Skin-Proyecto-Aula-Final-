@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Aplicar la fuente globalmente */
+body {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 25px; /* Tamaño de fuente ajustado */
+    background-color: #FF6F61;  /* Fondo rosado */
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff; /* Color de fondo principal */
+}
+
+.message-box {
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+}
+
+.message-box h1 {
+    color: #04CF9E;  /* Color verde para el título */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.message-box p {
+    color: #FF6F61;  /* Color rosado para el párrafo */
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.message-box .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #FF6F61; /* Color rosado para el botón */
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.message-box .btn:hover {
+    background-color: #E65C50; /* Color rosado más oscuro para el botón al pasar el ratón */
+    transform: scale(1.05);
+}

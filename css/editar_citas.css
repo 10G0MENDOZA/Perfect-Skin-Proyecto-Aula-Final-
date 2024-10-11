@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Aplicar la fuente globalmente */
+body {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 25px; /* Tamaño de fuente ajustado */
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    background-color: #f69f9f;
+    color: #fff;
+    padding: 10px;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f89b99;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #029c6d;
+}
+
+.message {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e7f9e7;
+    color: #2d8f2d;
+    border: 1px solid #2d8f2d;
+    border-radius: 5px;
+    display: none;
+}
+
+.back-button {
+    display: block;
+    text-align: center;
+    background-color: #03AE85;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 200px;
+    margin: 20px auto;
+}

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap');
+
+/* Estilos globales */
+body {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Fondo claro */
+    color: #333;
+}
+
+/* Estilo para el contenedor del mensaje */
+.message-container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Altura completa de la ventana */
+}
+
+/* Estilo para la caja del mensaje */
+.message-box {
+    max-width: 600px; /* Ancho máximo de la caja */
+    padding: 30px;
+    background-color: #fff; /* Fondo blanco para la caja */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Alinear texto al centro */
+}
+
+/* Estilo para el título */
+.message-box h1 {
+    color: #eaafaf; /* Color rosado personalizado */
+    font-size: 2.5rem; /* Tamaño del título */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilo para el párrafo */
+.message-box p {
+    font-size: 1.2rem; /* Tamaño del texto */
+    margin-bottom: 30px; /* Espacio inferior */
+    color: #666; /* Color gris */
+}
+
+/* Estilo para el botón */
+.btn {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #eaafaf; /* Color rosado personalizado */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem; /* Tamaño de la fuente */
+    transition: background-color 0.3s ease; /* Transición de color */
+}
+
+.btn:hover {
+    background-color: #d69c9c; /* Color rosado más oscuro al pasar el ratón */
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #333; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    text-align: center; /* Alinear texto al centro */
+    padding: 20px;
+    font-size: 1rem; /* Tamaño de la fuente */
+    margin-top: 50px;
+    border-top: 5px solid #eaafaf; /* Borde superior rosado personalizado */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .message-box {
+        padding: 20px;
+        margin: 30px auto; /* Centrar la caja */
+    }
+
+    .message-box h1 {
+        font-size: 2rem; /* Tamaño reducido en móviles */
+    }
+
+    .btn {
+        font-size: 1rem; /* Tamaño del botón en móviles */
+    }
+}

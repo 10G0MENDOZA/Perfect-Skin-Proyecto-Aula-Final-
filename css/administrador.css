@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 25px;
+}
+
+body{
+    background-color: rgb(239, 199, 199);
+}
+
+
+
+.menu-button-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+button {
+    background-color:rgb(235, 149, 149);
+    /* Cambiado el color del botón */
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+button:hover {
+    background-color: #f15a5a;
+    /* Cambiado el color al pasar el cursor por encima */
+}
+
+.options {
+    display: none;
+    flex-direction: column;
+    background: #ffffff;
+    border: 1px solid #04CF9E;
+    padding: 10px;
+    border-radius: 5px;
+    position: fixed;
+    top: 50px;
+    left: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.options a {
+    text-decoration: none;
+    color: #007bff;
+    margin: 0.5rem 0;
+    transition: color 0.3s, background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.options a:hover {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+i.bx {
+    font-size: 1.5rem;
+}
+

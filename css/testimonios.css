@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Aplicar la fuente globalmente */
+body {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 25px; /* Tamaño de fuente ajustado */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+header {
+    background-color: #38d39f;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+}
+
+.testimonios {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+blockquote {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.media-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+video,
+img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin: 10px 0;
+}
+
+.testimonios p {
+    color: #000;
+}
+
+footer {
+    background-color: #38d39f;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo para el botón de volver atrás */
+.boton-volver {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #38d39f; /* Color del botón */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: none; /* Sin borde */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    font-size: 1rem; /* Tamaño de la fuente */
+    cursor: pointer; /* Cursor al pasar sobre el botón */
+}
+
+.boton-volver:hover {
+    background-color: #32b88f; /* Cambio de color al pasar el cursor */
+}
+
+.text-end {
+    text-align: right; /* Alinea el contenido a la derecha */
+}
+
+
+

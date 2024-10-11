@@ -1,0 +1,124 @@
+/* Estilos Generales */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Cormorant Garamond", serif;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #F9F9F9, #E0F7FA);
+    /* Gradiente suave de gris a azul claro */
+}
+
+h1,
+h2 {
+    color: #292C35;
+    /* Títulos oscuros */
+}
+
+p {
+    color: #00909E;
+    /* Color del texto de los párrafos */
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Estilos del encabezado */
+header {
+    /* Fondo del encabezado */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos del contenido principal */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background: linear-gradient(to bottom, #F9F9F9, #E0F7FA);
+    /* Gradiente suave de gris a azul claro */
+}
+
+section {
+    margin-bottom: 40px;
+    background-color: #fff;
+    /* Fondo de las secciones */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #292C35;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+/* Estilos del pie de página */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #00909E;
+    color: #fff;
+}
+
+/* Estilos del botón */
+button {
+    background-color: #292C35;
+    /* Botón oscuro */
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos de las imágenes */
+.image-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.image-wrapper img {
+    max-width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra de las imágenes */
+}
+
+/* Navegación */
+.navbar_link_color .nav-link {
+    color: #00909E;
+    /* Color del enlace */
+    font-size: 1.2rem;
+}
+
+.navbar_link_color .nav-link:hover {
+    color: #0056b3;
+    /* Hover de los enlaces */
+}
+
+.logonav {
+    border-radius: 50%;
+    overflow: hidden;
+}
