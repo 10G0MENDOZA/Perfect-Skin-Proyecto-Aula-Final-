@@ -203,7 +203,7 @@
                                         limpieza, exfoliación e
                                         hidratación para dejar tu piel suave, luminosa y rejuvenecida.</p>
 
-                                    <a href="facialDiamante.php" class="btn">ver más</a>
+                                    <a href="servicios.php" class="btn">ver más</a>
                                 </div>
                             </div>
                          </div>
@@ -220,7 +220,7 @@
                                         suaviza la piel,
                                         mejorando su textura y tono.</p>
 
-                                    <a href="facialDiamante.php" class="btn">ver más</a>
+                                    <a href="servicios.php" class="btn">ver más</a>
                                     </a>
                                 </div>
                             </div>
@@ -238,7 +238,7 @@
                                         microneedling con
                                         suero vitamínico.</p>
 
-                                    <a href="facialDiamante.php" class="btn">ver más</a>
+                                    <a href="servicios.php" class="btn">ver más</a>
                                 </div>
                             </div>
                          </div>
@@ -254,7 +254,7 @@
                                     <p>Exfoliación con cuchilla estéril para remover células muertas y suavizar la piel.
                                     </p>
 
-                                    <a href="facialDiamante.php" class="btn">ver más</a>
+                                    <a href="servicios.php" class="btn">ver más</a>
                                 </div>
                             </div>
                           </div>
@@ -270,7 +270,7 @@
                                     <p>Hidratación intensiva diseñada para dejar los labios suaves, sedosos y radiantes.
                                     </p>
 
-                                    <a href="facialDiamante.php" class="btn">ver más</a>
+                                    <a href="servicios.php" class="btn">ver más</a>
                                 </div>
                             </div>
                           </div>
@@ -285,7 +285,7 @@
                                     <p>Desconecta de la tension y el estres con nuestro masaje relajante. Nuestros expertos terapeutas utilizan tecnicas suaves y precisas para aliviar la rigidez muscular y calmar la mente
                                     </p>
 
-                                    <a href="facialDiamante.php" class="btn">ver más</a>
+                                    <a href="servicios.php" class="btn">ver más</a>
                                 </div>
                             </div>
                           </div>
