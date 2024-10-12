@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Perfect-Skinn</title>
+    <title>Login Perfect-Skin</title>
     <link rel="stylesheet" href="css/styles.css">
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="img/LOGO.jpeg">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -20,16 +20,17 @@
 
 <body>
 
+
     <header id="header">
         <nav class="navbar-one flex">
             <div class="left flex">
                 <div class="email">
                     <i class="fa fa-envelope"></i>
-                    <span>skingperfect@gmail.com</span>
+                    <span>info@perfectskin.com</span>
                 </div>
                 <div class="call">
                     <i class="fa fa-phone-alt mr-2"></i>
-                    <span>+57  3176209590</span>
+                    <span>+57 3005615455</span>
                 </div>
             </div>
 
@@ -51,15 +52,12 @@
                         <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
-
-                <!-- Carrito de compras dentro del header -->
-                <div class="carrito">
-                    <a href="#" class="carrito-link">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span id="contador-carrito">0</span>
-                    </a>
+                <div id="language-switcher">
+                           <img src="https://flagcdn.com/24x18/us.png" alt="Switch to English" id="language-flag" onclick="toggleLanguage()">
                 </div>
-            </div>
+         </div>
+            
+                
         </nav>
 
         <nav class="navbar-second flex">
@@ -92,7 +90,10 @@
 
                     <form class="subscription-form" action="procesar_suscripcion.php" method="POST">
                         <input type="email" name="email" placeholder="email" class="form-control" required>
-                        <button type="submit">SUSCRÍBETE</button>
+                        <button class="Btn1">
+                                           <svg viewBox="0 0 576 512" height="1em" class="logoIcon"><path d="M309 106c11.4-7 19-19.7 19-34c0-22.1-17.9-40-40-40s-40 17.9-40 40c0 14.4 7.6 27 19 34L209.7 220.6c-9.1 18.2-32.7 23.4-48.6 10.7L72 160c5-6.7 8-15 8-24c0-22.1-17.9-40-40-40S0 113.9 0 136s17.9 40 40 40c.2 0 .5 0 .7 0L86.4 427.4c5.5 30.4 32 52.6 63 52.6H426.6c30.9 0 57.4-22.1 63-52.6L535.3 176c.2 0 .5 0 .7 0c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40c0 9 3 17.3 8 24l-89.1 71.3c-15.9 12.7-39.5 7.5-48.6-10.7L309 106z"></path></svg>
+                                                     GO PREMIUM
+                          </button>
                     </form>
 
                 </div>
@@ -202,7 +203,7 @@
                                         limpieza, exfoliación e
                                         hidratación para dejar tu piel suave, luminosa y rejuvenecida.</p>
 
-                                    <a href="servicios.php" class="btn">ver más</a>
+                                    <a href="facialDiamante.php" class="btn">ver más</a>
                                 </div>
                             </div>
                          </div>
@@ -219,7 +220,7 @@
                                         suaviza la piel,
                                         mejorando su textura y tono.</p>
 
-                                    <a href="servicios.php" class="btn">ver más</a>
+                                    <a href="facialDiamante.php" class="btn">ver más</a>
                                     </a>
                                 </div>
                             </div>
@@ -237,7 +238,7 @@
                                         microneedling con
                                         suero vitamínico.</p>
 
-                                    <a href="servicios.php" class="btn">ver más</a>
+                                    <a href="facialDiamante.php" class="btn">ver más</a>
                                 </div>
                             </div>
                          </div>
@@ -253,7 +254,7 @@
                                     <p>Exfoliación con cuchilla estéril para remover células muertas y suavizar la piel.
                                     </p>
 
-                                    <a href="servicios.php" class="btn">ver más</a>
+                                    <a href="facialDiamante.php" class="btn">ver más</a>
                                 </div>
                             </div>
                           </div>
@@ -269,7 +270,7 @@
                                     <p>Hidratación intensiva diseñada para dejar los labios suaves, sedosos y radiantes.
                                     </p>
 
-                                    <a href="servicios.php" class="btn">ver más</a>
+                                    <a href="facialDiamante.php" class="btn">ver más</a>
                                 </div>
                             </div>
                           </div>
@@ -284,7 +285,7 @@
                                     <p>Desconecta de la tension y el estres con nuestro masaje relajante. Nuestros expertos terapeutas utilizan tecnicas suaves y precisas para aliviar la rigidez muscular y calmar la mente
                                     </p>
 
-                                    <a href="servicios.php" class="btn">ver más</a>
+                                    <a href="facialDiamante.php" class="btn">ver más</a>
                                 </div>
                             </div>
                           </div>
@@ -315,7 +316,7 @@
                                         <p>Relájate y protege tu piel con nuestro servicio de protector solar
                                             personalizado.</p>
                                         <span class="precio-servicio">$41.500 COP</span>
-                                        <a href="#" class="btn-servicio">Comprar</a>
+                                        <a href="producto.php" class="btn-servicio">Ver más</a>
                                     </div>
                                 </div>
                             </div>
@@ -331,7 +332,7 @@
                                         <p>Mejora la apariencia de tu piel con nuestro tratamiento especializado
                                             antiedad.</p>
                                         <span class="precio-servicio">$80.000 COP</span>
-                                        <a href="#" class="btn-servicio">Comprar</a>
+                                        <a href="producto.php" class="btn-servicio">Ver más</a>
                                     </div>
                                 </div>
                             </div>
@@ -348,7 +349,7 @@
                                             fresca e hidratada respetando el pH de la piel sin dañar su barrera natur
                                         </p>
                                         <span class="precio-servicio">$40.000 COP</span>
-                                        <a href="#" class="btn-servicio">Comprar</a>
+                                        <a href="producto.php" class="btn-servicio">Ver más</a>
                                     </div>
                                 </div>
                             </div>
@@ -365,7 +366,7 @@
                                             fortalecida e hidratada gracias a su formulación con 2 densidades de Ácido
                                             Hialurónico, Pro-Vitamina B5 y Glicerina.</p>
                                         <span class="precio-servicio">$70.000 COP</span>
-                                        <a href="#" class="btn-servicio">Comprar</a>
+                                        <a href="producto.php" class="btn-servicio">Ver más</a>
                                     </div>
                                 </div>
                             </div>
@@ -382,7 +383,7 @@
                                             hidratación,
                                             dejando la piel con una sensación refrescante, limpia y suave.</p>
                                         <span class="precio-servicio">$35.000 COP</span>
-                                        <a href="#" class="btn-servicio">Comprar</a>
+                                        <a href="producto.php" class="btn-servicio">Ver más</a>
                                     </div>
                                 </div>
                             </div>
@@ -400,7 +401,7 @@
                                             y efectiva en un solo paso, dejando la piel completamente limpia de
                                             residuos.</p>
                                         <span class="precio-servicio">$100.000 COP</span>
-                                        <a href="#" class="btn-servicio">comprar</a>
+                                        <a href="https://www.google.com" class="btn-servicio">Ver más</a>
                                     </div>
                                 </div>
                             </div>
@@ -479,12 +480,128 @@
           Visité el spa con mi pareja y se siente un ambiente de relajación y armonía, la amabilidad de las personas que trabajan allí hacen más agradable la estadía. Elegimos el paquete Luminous
            Face y fue buena opción,Si quieren tener una buena experiencia, este es un lugar que les recomiendo.
           </p>
-          <img src="img/testimonio2.jpg" alt="user" />
+          <img src="img/deyfren.jpg" alt="user" />
           <h5>Taliana Avatar</h5>
           <h6>Super Giros</h6>
         </div>
       </div>
-    </section>              
+    
+    
+    </section>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>Perfect<span>Skin</span></h3>
+
+            <p class="footer-links">
+                <a href="#">Inicio</a>
+                
+                <a href="#">Servicio</a>
+                
+                <a href="#">Acerca de Nosotros</a>
+                
+                <a href="#">Contacto</a>
+
+                <a href="#">Producto</a>
+            </p>
+
+            <p class="footer-company-name">Copyright © 2021 <strong>SagarDeveloper</strong> All rights reserved</p>
+        </div>
+
+        <div class="footer-center">
+            <div> 
+                <i class="fa fa-map-marker"></i>
+                <p><span>Cartagena</span>
+                   Bolivar </p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+57 3005615455</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="Perfectskin@gmail.com">perfect@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>Acerca la Compañia</span>
+                <strong>Perfect skin</strong> 
+               
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                
+               
+              
+            </div>
+        </div>
+    </footer>
+
+<!-- Google Translate Script -->
+<div id="google_translate_element" style="display:none;"></div>
+
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'es',
+            includedLanguages: 'en,es',
+            autoDisplay: false
+        }, 'google_translate_element');
+    }
+</script>
+
+<!-- Cargar el script de Google Translate -->
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+<script>
+let currentLanguage = 'es'; // Idioma inicial es español
+
+function toggleLanguage() {
+    const translateDropdown = document.querySelector('.goog-te-combo');
+    
+    if (translateDropdown) {
+        if (currentLanguage === 'es') {
+            // Cambiar a inglés
+            translatePage('en');
+            document.getElementById('language-flag').src = 'https://flagcdn.com/24x18/co.png'; // Cambiar a bandera de Colombia
+            currentLanguage = 'en'; // Actualizar idioma actual
+        } else {
+            // Cambiar a español
+            translatePage('es');
+            document.getElementById('language-flag').src = 'https://flagcdn.com/24x18/us.png"'; // Cambiar a bandera de EE.UU.
+            currentLanguage = 'es'; // Actualizar idioma actual
+        }
+    } else {
+        console.log('Error: Google Translate combo not found.');
+    }
+}
+
+function translatePage(language) {
+    setTimeout(() => {
+        const translateDropdown = document.querySelector('.goog-te-combo');
+        
+        if (translateDropdown) {
+            translateDropdown.value = language; // Cambiar idioma
+            translateDropdown.dispatchEvent(new Event('change')); // Disparar evento para traducir
+        } else {
+            console.log('Error: Google Translate combo not found.');
+        }
+    }, 500);  // Añadimos un pequeño retraso para asegurarnos que el combo esté listo
+}
+
+
+</script>
+
+
+
+                      
+                    
                     <script src="js/ocultar.js"></script>
                     <script src="js/menu_desplegable.js"></script>
                     <script src="js/modal.js"></script>
@@ -494,10 +611,15 @@
                     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
                     <script src="js/swiper_setup.js"></script>
                     <script src="js/swiper_servicios.js"></script>
-                    <script src="js/carrito.js"></script>
+                    
                     <script src="js/musica.js"></script>
                     <script src="js/carousel_Navigation.js"></script>
-                    <script src="js/galeria.js"></script>                              
+                    <script src="js/galeria.js"></script>
+                 
+                   
+   
+
+                
 </body>
 
 </html>

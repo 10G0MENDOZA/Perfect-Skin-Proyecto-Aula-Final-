@@ -119,35 +119,19 @@ span{
 
 
 .navbar-second.scrolled {
-    background-color:  #c5898998; /* Fondo oscuro al hacer scroll */
+    background-color:  #ea919198; /* Fondo oscuro al hacer scroll */
     box-shadow: 0 4px 8px rgba(248, 9, 9, 0.2); /* Añade sombra */
     padding: 18px 30px;
     top:0;
     transition: all 0.5s ease-in-out;
-}
-/* Estilos del carrito cuando se desplaza con el scroll */
-.carrito.sticky {
     position: fixed;
-    top: 52px; /* Ajusta para evitar que se superponga con el navbar-second */
-    right: 100px;
-    z-index: 1000;
-   
-    padding: 10px;
-    border-radius: 50px;
-    transition: all 0.5s ease-in-out;
     
 }
-.carrito.sticky i {
-    color: rgb(4, 4, 4);
-    cursor:pointer; /* Cambia el color del ícono al hacer scroll */
+.navbar-second.scrolled ul.flex li a{
+    color:white;
+    background-color:  #ea8787;
 }
-.carrito.sticky span {
-    background-color: rgb(255, 0, 0); /* Fondo blanco para el contador */
-    color: #000000; /* Cambia el color del texto del contador */
-    padding: 2px 6px;
-    border-radius: 50%;
-}
-
+/* Estilos del carrito cuando se desplaza con el scroll */
 
 
 
@@ -176,6 +160,7 @@ ul.flex {
 ul.flex li {
     position: relative;
 }
+
 
 ul.flex li a {
     font-family: 'Poppins', sans-serif; /* Tipografía moderna */
@@ -213,37 +198,6 @@ ul.flex li:not(:last-child)::after {
 
 
 
-.carrito i{
-    color: #f09494; 
-    font-size: 20px; /* Tamaño del ícono */
-    transition: color 0.3s ease;
-    gap:8px;
-}
-.carrito i:hover{
-    color:#f63f3f;
-}
-.carrito span{
-    background-color: #eaafaf;
-    border-radius: 50%;
-    padding: 5px;
-    font-size: 10px;
-    position: absolute;
-    top: -5px;
-    right: -8px;
-    color:#f63f3f
-}
-.notificacion-carrito {
-    position: fixed;
-    bottom: 80px;
-    right: 20px;
-    background-color: #ee4f4f;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    z-index: 1000;
-    opacity: 0.9;
-    animation: fadeInOut 3s forwards;
-}
 
 
 
@@ -280,6 +234,12 @@ ul.flex li:not(:last-child)::after {
 .whatsapp i:hover{
     color:#4bff04;
 }
+
+.goog-te-banner-frame.skiptranslate, 
+.goog-te-gadget-icon {
+    display: none !important;
+}
+
 
 li{
     list-style: none;
@@ -327,7 +287,39 @@ a{
         margin-top: 10px;
     }
 }
-
+/* From Uiverse.io by vinodjangid07 */ 
+.Btn1 {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(to right,#bf953f,#fcf6ba,#b38728,#fbf5b7,#aa771c);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 0.8em;
+    color: rgb(121, 103, 3);
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition-duration: 3s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.144);
+    background-size: 200% 200%;
+  }
+  
+  .logoIcon path {
+    fill: rgb(121, 103, 3);
+  }
+  
+  .Btn1:hover {
+    transform: scale(0.95);
+    transition-duration: 3s;
+    animation: gradient 5s ease infinite;
+    background-position: right;
+  }
+  
 
 
 
@@ -468,12 +460,8 @@ a{
     background: #f5f5f5;
     box-shadow: 0 30px 50px #dbdbdb;
     
-  
-    
- /* Espacio entre la sección Acerca de Nosotros y el Swiper */
-
-    /* Eliminar márgenes negativos */
 }
+
 
 
 .container .slide .item{
@@ -569,23 +557,54 @@ a{
 }
 
 .button button{
-    width: 40px;
-    height: 35px;
-    border-radius: 8px;
-    border: none;
+    --color: #f79898;
+    font-family: inherit;
+    display: inline-block;
+    width: 5em;
+    height: 2.0em;
+    line-height: 2em;
+    margin: 20px;
+    position: relative;
     cursor: pointer;
-    margin: 0 5px;
-    border: 1px solid #000;
-    transition: 0.3s;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
 }
 
-.button button:hover{
-    background: #f07474;
+.button button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  .button button:hover {
     color: #fff;
-}
-
-
-
+  }
+  
+  .button button:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  
+  .button button:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  .button button:active:before {
+    background: #e47474;
+    transition: background 0s;
+  }
     
     
 
@@ -657,6 +676,8 @@ a{
     font-size:20px;
     margin-bottom: 10px;
     margin-right: 30%;
+   
+    font-weight: bold;
     
 }
 
@@ -671,27 +692,68 @@ a{
     
 }
 
-
-
+a.btn{
+   
+    background: #ffbbbb;
+    
+}
 
 
 .producto-descripcion .btn {
     margin-top: 0; /* Espacio entre el precio y el botón */
     display: inline-block; /* Para que el botón respete el margen */
     padding: 5px 10px; /* Tamaño del botón */
-    background-color: #faa3a3; /* Color de fondo */
-    color: white; /* Color del texto */
-    text-align: center; /* Centrar el texto */
+   text-align: center; /* Centrar el texto */
     text-decoration: none; /* Sin subrayado */
-    border-radius: 5px; /* Bordes redondeados */
-    transition: background-color 0.3s; /* Efecto de transición */
-    width: 250px;
+    --color: #f79898;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.0em;
+    line-height: 1.5em;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    
+    transition: color 0.5s;
+    z-index: 1;
+    
+    border-radius: 6px;
+    font-weight: 200px;
+    color: white;
+    
 }
 
-
-.btn:hover {
-    background-color: #f86161;
-}
+.btn:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background:#f86161;
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  .btn:hover {
+    color: #fff;
+  }
+  
+  .btn:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  
+  .btn:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  .btn:active:before {
+    background: #f14e4e;
+    transition: background 0s;
+  }
 
 .swiper-button-next, .swiper-button-prev {
     color: #ff0000 !important; /* Cambia el color aquí (por ejemplo, rojo) */
@@ -825,6 +887,7 @@ a{
     font-size:20px;
     margin-bottom: 10px;
       margin-right: 30%;
+      font-weight: bold;
 }
 
 .precio-servicio  {
@@ -834,7 +897,7 @@ a{
         margin-bottom: 10px; /* Espacio entre el precio y el botón */
         font-size: 18px;
         color: #333;
-        margin-left: 25%;
+        margin-left: 15%;
         font-weight: bold;
    
 
@@ -849,14 +912,57 @@ a{
     color: white; /* Color del texto */
     text-align: center; /* Centrar el texto */
     text-decoration: none; /* Sin subrayado */
-    border-radius: 5px; /* Bordes redondeados */
-    transition: background-color 0.3s; /* Efecto de transición */
-    width: 250px; 
+    margin-top: 0; /* Espacio entre el precio y el botón */
+    display: inline-block; /* Para que el botón respete el margen */
+    padding: 5px 10px; /* Tamaño del botón */
+   text-align: center; /* Centrar el texto */
+    text-decoration: none; /* Sin subrayado */
+    --color: #f79898;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.0em;
+    line-height: 1.5em;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.5s;
+    z-index: 1;
+    border-radius: 6px;
+    font-weight: 200px;
+    color: white;
 }
 
-.btn-servicio:hover {
-    background-color: #f86161;
-}
+.btn-servicio:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background:#f86161;
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  .btn-servicio:hover {
+    color: #fff;
+  }
+  
+  .btn-servicio:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  
+  .btn-servicio:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  .btn-servicio:active:before {
+    background: #f14e4e;
+    transition: background 0s;
+  }
 
 
 .galeria-seccion {
@@ -908,7 +1014,9 @@ a{
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
+   
 }
+
 
 .left-content {
     width: 50%;
@@ -946,9 +1054,7 @@ a{
     width: 100%;
     
     box-shadow: 10 10px 20px 40px  #f29191;
-
 }
-
 
 
 .section-wrapper {
@@ -1028,29 +1134,71 @@ p {
 
 .schedule li {
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 18px;
     color: #333;
+    font-family: 'Poppins', sans-serif;
 }
 
 .schedule li span {
     font-weight: bold;
+
 }
 
 .button1 {
-    background-color: #f69488;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+    margin-top: 0; /* Espacio entre el precio y el botón */
+    display: inline-block; /* Para que el botón respete el margen */
+    padding: 5px 10px; /* Tamaño del botón */
+   text-align: center; /* Centrar el texto */
+    text-decoration: none; /* Sin subrayado */
+    --color: #f79898;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.0em;
+    line-height: 1.5em;
+    margin: 20px;
+    position: relative;
     cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
+    overflow: hidden;
+    
+    transition: color 0.5s;
+    z-index: 1;
+    
+    border-radius: 6px;
+    font-weight: 200px;
+    color: white;
+    background: #f69488;
 }
 
-.button1:hover {
-    background-color: #e47a6b;
-}
-
+.button1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background:#f86161;
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  .button1:hover {
+    color: #fff;
+  }
+  
+  .button1:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  
+  .button1:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  .button1:active:before {
+    background: #f14e4e;
+    transition: background 0s;
+  }
 
 
   .music-button {
@@ -1176,8 +1324,8 @@ p {
   
   .section__card img {
     margin-bottom: 1rem;
-    max-width: 100px;
-    border-radius: 100%;
+    max-width: 90px;
+    border-radius: 50%;
     border: 2px solid var(--primary-color);
     transition: 0.3s;
   }
@@ -1485,20 +1633,10 @@ p {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-.text-content button {
-    padding: 5px 10px;
-    background-color: #eb9393;
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 5%;
+
     
-    
-}
-.text-content button:hover {
-    background-color: #f16a6a;
-}
+
+
 .close {
     position: absolute;
     top: 10px;
@@ -1527,16 +1665,10 @@ p {
 }
 
 .subscription-form input {
-    flex: 1; /* Ajusta el tamaño del input para que sea flexible */
+ /* Ajusta el tamaño del input para que sea flexible */
     padding: 10px;
 }
-.subscription-form button {
-    padding: 10px 20px;
-    background-color: #FFB6C1; /* Color del botón */
-    border: none;
-    cursor: pointer;
-    color: white;
-}
+
 
 
 @media (max-width: 768px) {
