@@ -15,7 +15,7 @@ window.addEventListener('scroll', function() {
             navbar.classList.remove('scrolled');
             
             // Quitar el estado sticky del carrito
-            carrito.classList.remove('sticky');
+            carrito.classList.remove('sticky');z
         }
     }
 });
