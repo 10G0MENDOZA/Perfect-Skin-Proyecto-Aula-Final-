@@ -288,7 +288,7 @@ a{
     }
 }
 /* From Uiverse.io by vinodjangid07 */ 
-.Btn1 {
+.subscription-form button{
     width: 200px;
     height: 40px;
     border: none;
@@ -313,7 +313,7 @@ a{
     fill: rgb(121, 103, 3);
   }
   
-  .Btn1:hover {
+  .subscription-form button:hover {
     transform: scale(0.95);
     transition-duration: 3s;
     animation: gradient 5s ease infinite;
