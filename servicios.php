@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/servicios.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+    <link rel="icon" href="img/LOGO.jpeg">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Facial Diamante</title>
+    <title>Servicios</title>
 </head>
 <body>
 <header>
@@ -92,7 +92,7 @@
             <h2>Facial Clásico</h2>
             <p>Descripción del servicio Facial Clásico.</p>
             <p>40 MINUTOS - $166.600 COP</p>
-            <a href="cliente.php?servicio=Facial Clásico" class="button">Reservar</a>
+            <a href="agendar_citas.php?servicio=Facial Clásico" class="button">Reservar</a>
         </div>
     </div>
 
@@ -104,7 +104,7 @@
             <h2>Facial Diamante</h2>
             <p>Descripción detallada del servicio Facial Diamante.</p>
             <p>40 MINUTOS - $150.000 COP</p>
-            <a href="cliente.php?servicio=Facial Diamante" class="button">Reservar</a>
+            <a href="agendar_citas.php?servicio=Facial Diamante" class="button">Reservar</a>
         </div>
     </div>
 
@@ -116,7 +116,7 @@
             <h2>Luminous Face</h2>
             <p>Descripción detallada del servicio Luminous Face.</p>
             <p>40 MINUTOS - $140.000 COP</p>
-            <a href="cliente.php?servicio=Luminous Face" class="button">Reservar</a>
+            <a href="agendar_citas.php?servicio=Luminous Face" class="button">Reservar</a>
         </div>
     </div>
     <div id="modal4" class="modal">
@@ -126,7 +126,7 @@
             <h2>Dermaplaning</h2>
             <p>Descripción detallada del servicio Dermaplaning.</p>
             <p>40 MINUTOS - $140.000 COP</p>
-            <a href="cliente.php?servicio=Luminous Face" class="button">Reservar</a>
+            <a href="agendar_citas.php?servicio=Luminous Face" class="button">Reservar</a>
         </div>
     </div>
 
@@ -137,7 +137,7 @@
             <h2>Masaje Relajante</h2>
             <p>Descripción detallada del servicio Masaje relajante.</p>
             <p>40 MINUTOS - $140.000 COP</p>
-            <a href="cliente.php?servicio=Luminous Face" class="button">Reservar</a>
+            <a href="agendar_citas.php?servicio=Luminous Face" class="button">Reservar</a>
         </div>
     </div>
 
@@ -148,7 +148,7 @@
             <h2>Hidralips</h2>
             <p>Descripción detallada del servicio Masaje relajante.</p>
             <p>40 MINUTOS - $140.000 COP</p>
-            <a href="cliente.php?servicio=Luminous Face" class="button">Reservar</a>
+            <a href="agendar_citas.php?servicio=Luminous Face" class="button">Reservar</a>
         </div>
     </div>
 

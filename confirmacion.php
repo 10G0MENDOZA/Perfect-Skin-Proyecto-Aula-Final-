@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="css/confirmacion.css">
+    <link rel="icon" href="img/LOGO.jpeg">
 </head>
 
 <body>

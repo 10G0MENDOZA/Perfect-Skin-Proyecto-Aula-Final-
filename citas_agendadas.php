@@ -3,7 +3,7 @@
 
 <head>
     <title>Citas Agendadas</title>
-    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="icon" href="img/LOGO.jpeg">
     <link rel="stylesheet" href="css/citas_sagendadas.css">
 </head>
 

@@ -70,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Envía el correo
             $mail->send();
             // Redirige a la página de confirmación después de enviar el correo
-            header("Location: clita_agendada_con_exito.php");
+            header("Location: cita_agendada_con_exito.php");
             exit(); // Asegura que el script termine aquí para que la redirección funcione correctamente
         } catch (Exception $e) {
             echo "Cita reservada exitosamente, pero hubo un problema al enviar el correo: {$mail->ErrorInfo}";

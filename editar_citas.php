@@ -72,7 +72,7 @@ if (isset($_POST['cedula'])) {
     </form>
 
     <div id="message" style="display:none;">Cita actualizada con éxito.</div>
-    <button id="backButton" style="display:none;" onclick="window.location.href='ver_clientes.php';">Volver</button>
+    <button id="backButton" style="display:none;" onclick="window.location.href='x|x|.php';">Volver</button>
 
     <script src="js/editarcitas.js"></script>
     <script src="js/inactividad.js"></script>

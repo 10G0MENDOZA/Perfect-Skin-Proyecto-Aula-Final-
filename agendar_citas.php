@@ -2,25 +2,15 @@
 <html lang="es">
 
 <head>
-    <title>Cliente</title>
+    <title>Agendar Citas</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/LOGO.jpeg">
-    <link rel="stylesheet" href="css/cliente.css">
+    <link rel="stylesheet" href="css/agendar_citas.css">
     
     <!-- Librería para Flatpickr (calendario personalizado) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
-    <style>
-        .flatpickr-day.disabled {
-            background-color: #ff6961 !important; /* Fechas no disponibles en rojo */
-            color: white;
-        }
-        .flatpickr-day.available {
-            background-color: #77dd77 !important; /* Fechas disponibles en verde */
-            color: white;
-        }
-    </style>
 </head>
 
 <body>

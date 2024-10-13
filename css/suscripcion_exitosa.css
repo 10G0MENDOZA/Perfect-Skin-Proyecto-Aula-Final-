@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap');
+
+/* Estilos globales */
+body {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Fondo claro */
+    color: #333;
+}
+
+h2 {
+    color: #eaafaf; /* Color rosado personalizado */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.success-message {
+    max-width: 600px;
+    margin: 50px auto; /* Centra la sección */
+    padding: 30px;
+    background-color: #fff; /* Fondo blanco para el mensaje */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.success-message p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Contenedor del botón */
+.button-container {
+    display: flex;
+    justify-content: center; /* Centra el botón */
+    margin-top: 20px; /* Espacio entre el mensaje y el botón */
+}
+
+/* Estilo del botón */
+.btn {
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border: none;
+    background-color: #eaafaf; /* Color rosado personalizado */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none; /* Quitar subrayado */
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d69c9c; /* Color más oscuro al pasar el ratón */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .success-message {
+        padding: 20px;
+        margin: 30px auto;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 15px; /* Espaciado más pequeño para pantallas pequeñas */
+    }
+}
