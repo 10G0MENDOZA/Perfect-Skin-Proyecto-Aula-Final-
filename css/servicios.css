@@ -32,8 +32,23 @@ body {
     height: auto;
     z-index: 2; /* Esta imagen está por encima de la primera imagen */
     right: 350px;
-    
+    animation: slideUp 2s ease-out forwards; /* Aplica la animación */
+    opacity: 0; /* Ocultar la imagen inicialmente */
 }
+@keyframes slideUp {
+    0% {
+        opacity: 0; /* Inicia siendo invisible */
+        transform: translateY(100px); /* Desplazamiento desde abajo */
+    }
+    100% {
+        opacity: 1; /* Totalmente visible */
+        transform: translateY(0); /* Regresa a su posición original */
+    }
+}
+
+
+    
+
 .tercer-image {
     position: absolute; /* Superpuesta sobre la primera imagen */
     width: 365px; /* Ajusta el tamaño de la segunda imagen */
@@ -139,6 +154,16 @@ body {
    
 
 }
+.imagen1{
+    width: 100%;
+    height: 50%;
+    
+    border-top-left-radius: 8px; /* Redondea la esquina superior izquierda */
+    border-top-right-radius: 8px;
+    object-fit: cover;
+    object-position: 50% 35%;
+
+}
 .card h3 {
     text-align: center;
     font-family: 'Playfair Display', serif; /* Fuente elegante */
@@ -164,30 +189,62 @@ body {
     width: 40%; /* Ajusta el ancho del botón para que no sea tan largo */
     margin: 0 auto; /* Centra el botón horizontalmente */
     margin-bottom: 20px; /* Ajusta el espacio debajo del botón */
+    
+
 }
 
+/* From Uiverse.io by vikiWayne */ 
+/* From Uiverse.io by cssbuttons-io */ 
 button {
-    padding: 10px 15px;
-    border: none;
-    background-color: #eb5f5f;
-    color: rgb(252, 252, 252);
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px; /* Ajusta el tamaño de la fuente si es necesario */
-    width: 100%; /* Asegura que el ancho del botón esté limitado al contenedor del .card */
+    --color: #f79898;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
     position: relative;
+    cursor: pointer;
     overflow: hidden;
-
-}
-
-
-
-button:hover {
-    background:#f22f2f;
-   
-}
-
-
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+  }
+  
+  button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  button:hover {
+    color: #fff;
+  }
+  
+  button:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  
+  button:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  button:active:before {
+    background: #e62c2c;
+    transition: background 0s;
+  }
+  
 .dot {
     height: 15px;
     width: 15px;
@@ -206,12 +263,14 @@ button:hover {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.5s ease; /* Transición suave de opacidad */
+    opacity: 0; /* Inicialmente transparente */
     
      
 }
@@ -220,7 +279,7 @@ button:hover {
 /* Estilo para la imagen dentro del modal */
 .modal-img {
     width: 100%; /* Ocupa todo el ancho disponible */
-    height: 50%;
+    height: 40%;
    /* Espaciado inferior */
    
      border-top-left-radius: 8px; /* Redondea la esquina superior izquierda */
@@ -230,23 +289,58 @@ button:hover {
     
    
 }
+.modal-img1{
+    margin-top:0%;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 40%;
+    border-top-left-radius: 8px; /* Redondea la esquina superior izquierda */
+    border-top-right-radius: 8px;
+    object-fit: cover;
+    object-position: 50% 35%;
+    
+}
 
 /* Ajustes generales del modal */
 .modal-content {
-    max-width: 500px; /* Tamaño máximo del modal */
-    height: 450px;
+    max-width: 600px; /* Tamaño máximo del modal */
+    height: 600px;
     margin: auto;
     padding: 0px;
     border-radius: 10px;
     background-color: white;
     position: relative;
-    top: 20%;
+    top: 60px;
     box-shadow: 0 10px 40px #f29191;
     display: flex; /* Flexbox para alinear contenido */
     flex-direction: column; /* Coloca los elementos en columna */
     justify-content: space-between; /* Espaciado entre elementos */
     background-color: white;
+    transition: opacity 0.5s ease; /* Transición suave para que el contenido aparezca */
+    opacity: 0; /* Inicialmente transparente */
+    z-index: 1001;
     
+    
+}
+.modal-content h2, .modal-content p, .modal-content a {
+    opacity: 0;
+    transition: opacity 1s ease; /* Efecto de desvanecimiento para los textos */
+    transition-delay: 0.5s; /* Retrasa la aparición de los textos */
+}
+
+/* Cuando el modal esté activo, establece la opacidad al máximo */
+.modal.show {
+    display: block;
+    opacity: 1; /* El modal se mostrará completamente */
+}
+
+.modal.show .modal-content {
+    opacity: 1; /* El contenido del modal se mostrará completamente */
+}
+
+.modal.show .modal-content h2, 
+.modal.show .modal-content p, 
+.modal.show .modal-content a {
+    opacity: 1; /* Los textos aparecerán completamente */
 }
 
 .close {
@@ -279,21 +373,58 @@ button:hover {
 
 /* Estilos del botón */
 .modal-content .button {
-    display: block;
-    text-align: center;
-    padding: 10px 20px;
-    background-color: #f4abab; /* Mismo color que las tarjetas */
-    color: white;
-    border-radius: 5px;
-    font-size: 20px;
-    text-decoration: none;
-    margin: 0 auto;
-    width: fit-content;
-}
+   
+        text-align: center;
+        text-decoration: none;
+        --color: #f79898;
+        font-family: inherit;
+        display: block; /* Cambiar a block */
+        width: 8em;
+        height: 2.6em;
+        line-height: 2.5em;
+        margin: 20px auto; /* Centrar el botón horizontalmente */
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        border: 2px solid var(--color);
+        transition: color 0.5s;
+        z-index: 1;
+        font-size: 17px;
+        border-radius: 6px;
+        font-weight: 500;
+        color: var(--color);
+    }
+    
 
-.modal-content .button:hover {
-    background-color: #f75c5c; /* Color de hover */
-}
+    .modal-content .button:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background: var(--color);
+        height: 150px;
+        width: 200px;
+        border-radius: 50%;
+      }
+      
+      .modal-content .button:hover {
+        color: #fff;
+      }
+      
+      .modal-content .button:before {
+        top: 100%;
+        left: 100%;
+        transition: all 0.7s;
+      }
+      
+      .modal-content .button:hover:before {
+        top: -30px;
+        left: -30px;
+      }
+      
+      .modal-content .button:active:before {
+        background: #e62c2c;
+        transition: background 0s;
+      }
 
 footer {
     position: static;

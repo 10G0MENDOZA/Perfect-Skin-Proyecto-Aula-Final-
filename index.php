@@ -500,7 +500,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/swiper_setup.js"></script>
     <script src="js/swiper_servicios.js"></script>
-    <script src="js/carrito.js"></script>
     <script src="js/musica.js"></script>
     <script src="js/carousel_Navigation.js"></script>
     <script src="js/galeria.js"></script>
