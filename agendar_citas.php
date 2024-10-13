@@ -7,10 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/LOGO.jpeg">
     <link rel="stylesheet" href="css/agendar_citas.css">
-    
-    <!-- Librería para Flatpickr (calendario personalizado) -->
+    <script src="https://checkout.bold.co/library/boldPaymentButton.js" async></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-
 </head>
 
 <body>
@@ -36,10 +34,9 @@
 
         // Consulta para obtener las fechas y horas ya agendadas (ocupadas)
         $result = $conexion->query("SELECT fecha, hora FROM citas_agendadas");
-
         $citasOcupadas = [];
         while ($row = $result->fetch_assoc()) {
-            $citasOcupadas[] = $row['fecha'] . ' ' . $row['hora']; // Combinar fecha y hora
+            $citasOcupadas[] = $row['fecha'] . ' ' . $row['hora'];
         }
 
         // Cerrar la conexión a la base de datos
@@ -47,11 +44,10 @@
 
         // Obtener el servicio seleccionado desde la URL
         $servicioSeleccionado = isset($_GET['servicio']) ? $_GET['servicio'] : 'No se ha seleccionado servicio';
+        $precioSeleccionado = isset($_GET['precio']) ? $_GET['precio'] : 0; // Añadir precio
         ?>
 
         <form method="post" id="reservaForm" class="mx-auto" action="guardar_citas.php">
-            
-            <!-- Campo para ingresar la cédula -->
             <div class="mb-3">
                 <label for="cedula" class="form-label">Cédula:</label>
                 <input type="text" id="cedula" name="cedula" class="form-control" required>
@@ -61,23 +57,30 @@
                 <label for="correo" class="form-label">Correo Electrónico:</label>
                 <input type="email" id="correo" name="correo" class="form-control" required>
             </div>
+            
             <div class="mb-3">
                 <label for="fecha" class="form-label">Fecha:</label>
                 <input type="date" id="fecha" name="fecha" class="form-control" required>
             </div>
+            
             <div class="mb-3">
                 <label for="hora" class="form-label">Hora:</label>
                 <input type="text" id="hora" name="hora" class="form-control flatpickr-time" required>
             </div>
-
-            <!-- Mostrar el servicio seleccionado sin permitir cambios -->
+            
             <div class="mb-3">
-                <label for="servicio" class="form-label">Servicio Seleccionado:</label>
-                <input type="text" id="servicio" name="servicio" class="form-control" value="<?php echo $servicioSeleccionado; ?>" readonly>
+                <label for="precio" class="form-label">Precio:</label>
+                <input type="number" id="precio" name="precio" class="form-control" value="<?php echo htmlspecialchars($precioSeleccionado); ?>" readonly>
             </div>
 
-            <input type="submit" class="btn boton-reserva" value="Reservar">
+            <div class="mb-3">
+                <label for="servicio" class="form-label">Servicio Seleccionado:</label>
+                <input type="text" id="servicio" name="servicio" class="form-control" value="<?php echo htmlspecialchars($servicioSeleccionado); ?>" readonly>
+            </div>
+
+            <input type="submit" class="btn boton-reserva" value="Pagar">
         </form>
+
     </section>
 
     <footer class="text-center py-4">
@@ -102,7 +105,6 @@
                     firstDayOfWeek: 1 // Iniciar semana en lunes
                 },
                 onDayCreate: function (dObj, dStr, fp, dayElem) {
-                    // Verificar si la fecha es una de las ocupadas o disponibles
                     if (citasOcupadas.some(cita => cita.split(' ')[0] === dayElem.dateObj.toISOString().split('T')[0])) {
                         dayElem.classList.add("disabled");
                     } else {
@@ -120,6 +122,6 @@
             });
         });
     </script>
-</body>
 
+</body>
 </html>

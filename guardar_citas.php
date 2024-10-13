@@ -29,11 +29,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $fecha = $_POST['fecha'];
     $hora = $_POST['hora'];
     $servicio = $_POST['servicio'];
+    $precio = $_POST['precio'];
 
-    // Prepara la consulta SQL para incluir la cédula
-    $sql = "INSERT INTO citas_agendadas (cedula, correo, fecha, hora, servicio) VALUES (?, ?, ?, ?, ?)";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param('sssss', $cedula, $correo, $fecha, $hora, $servicio); // Asegúrate de incluir la cédula aquí
+      // Prepara la consulta SQL para incluir la cédula
+      $sql = "INSERT INTO citas_agendadas (cedula, correo, fecha, hora, servicio, precio) VALUES (?, ?, ?, ?, ?, ?)";
+      $stmt = $conn->prepare($sql);
+      $stmt->bind_param('sssssi', $cedula, $correo, $fecha, $hora, $servicio, $precio); // Asegúrate de incluir la cédula aquí
+  
+    // Asegúrate de incluir la cédula aquí
 
     // Ejecuta la consulta y verifica
     if ($stmt->execute()) {
@@ -70,7 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Envía el correo
             $mail->send();
             // Redirige a la página de confirmación después de enviar el correo
-            header("Location: cita_agendada_con_exito.php");
+            header("Location: iniciar_pago.php");
             exit(); // Asegura que el script termine aquí para que la redirección funcione correctamente
         } catch (Exception $e) {
             echo "Cita reservada exitosamente, pero hubo un problema al enviar el correo: {$mail->ErrorInfo}";
