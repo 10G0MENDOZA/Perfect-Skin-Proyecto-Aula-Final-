@@ -113,7 +113,7 @@
             <span id="icon">&#9654;</span>
         </button>
         <audio id="backgroundMusic" autoplay>
-            <source src="css/music/musicadefondo.mp3" type="audio/mpeg">
+            <source src="music/musicadefondo.mp3" type="audio/mpeg">
          
         </audio>
     </div>
