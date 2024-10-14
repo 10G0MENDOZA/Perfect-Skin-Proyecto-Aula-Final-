@@ -12,7 +12,7 @@
   data-bold-button
   data-api-key="IRv_v4emCikjs7GWvAQYH5TSwyfwHd4E8oJX7kQGIFM"
   data-description="Pago de mi reserva dinámica"
-  data-redirection-url="http://localhost/Perfect_Skin/Perfect-Skin-Proyecto-Aula-Final-/cita_agendada_con_exito.php"
+  data-redirection-url="http://localhost/Perfect-Skin-Proyecto-Aula-Final-/Perfect-Skin-Proyecto-Aula-Final-/cita_agendada_con_exito.php"
   ></script>
 </body>
 </html>
