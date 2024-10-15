@@ -134,45 +134,6 @@
     </div>
 </div>
 
-<footer class="footer-distributed">
-    <div class="footer-left">
-        <h3>Perfect<span>Skin</span></h3>
-        <p class="footer-links">
-            <a href="#">Inicio</a>
-            <a href="#">Servicio</a>
-            <a href="#">Acerca de Nosotros</a>
-            <a href="#">Contacto</a>
-            <a href="#">Producto</a>
-        </p>
-        <p class="footer-company-name">Copyright © 2021 <strong>SagarDeveloper</strong> All rights reserved</p>
-    </div>
-    <div class="footer-center">
-        <div>
-            <i class="fa fa-map-marker"></i>
-            <p><span>Cartagena</span> Bolivar</p>
-        </div>
-        <div>
-            <i class="fa fa-phone"></i>
-            <p>+57 3005615455</p>
-        </div>
-        <div>
-            <i class="fa fa-envelope"></i>
-            <p><a href="mailto:perfect@gmail.com">perfect@gmail.com</a></p>
-        </div>
-    </div>
-    <div class="footer-right">
-        <p class="footer-company-about">
-            <span>Acerca de la Compañia</span>
-            <strong>Perfect Skin</strong>
-        </p>
-        <div class="footer-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-whatsapp"></i></a>
-        </div>
-    </div>
-</footer>
-
 <script src="js/gestionar_modales_y_tarjetas.js"></script>
 <script>
 function showModal(modalId) {

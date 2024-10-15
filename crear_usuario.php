@@ -29,22 +29,11 @@
                 <input type="password" id="contrasena" name="contrasena" class="form-control" required
                     placeholder="Ingrese su contraseña" aria-describedby="password-addon">
             </div>
-
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="email-addon"><i class="fas fa-envelope"></i></span>
-                <input type="email" id="email" name="email" class="form-control" required
-                    placeholder="Ingrese su correo electrónico" aria-describedby="email-addon">
-            </div>
-
             <div class="input-group mb-3">
                 <span class="input-group-text" id="role-addon"><i class="fas fa-user-tag"></i></span>
                 <select name="rol" id="rol" class="form-select" aria-describedby="role-addon">
                     <option value="" disabled selected>Seleccione un rol</option>
                     <option value="administrador">Administrador</option>
-                    <option value="recepcionista">Recepcionista</option>
-                    <option value="esteticista">Esteticista</option>
-                    <option value="masajista">Masajista</option>
-                    <option value="limpieza">Personal de limpieza</option>
                 </select>
             </div>
 

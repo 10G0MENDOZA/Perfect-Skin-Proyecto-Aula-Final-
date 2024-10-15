@@ -1,0 +1,60 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor del botón de pago */
+.payment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Estilo del botón de pago */
+button.bold-payment-button {
+    background-color: #e0f7fa; /* Azul claro */
+    color: #00796b; /* Verde azulado oscuro */
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover para el botón */
+button.bold-payment-button:hover {
+    background-color: #b2ebf2; /* Azul más claro */
+}
+
+/* Efectos adicionales */
+button.bold-payment-button:active {
+    transform: scale(0.98);
+    background-color: #80deea;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .payment-container {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    button.bold-payment-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}

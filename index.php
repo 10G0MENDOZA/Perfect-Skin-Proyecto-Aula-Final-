@@ -87,7 +87,7 @@
                 <img src="img/registrar.jpg" class="background-image">
                 <div class="text-content">
                     <h2>SUSCRÍBETE</h2>
-                    <p>Subscribete para contendido exsclusivo y ofertas</p>
+                    <p> para contendido exsclusivo y ofertas</p>
 
                     <form class="subscription-form" action="procesar_suscripcion.php" method="POST">
                         <input type="email" name="email" placeholder="email" class="form-control" required>
