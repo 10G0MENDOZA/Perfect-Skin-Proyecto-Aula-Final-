@@ -11,7 +11,11 @@ body {
 }
 
 /* Contenedor del botón de pago */
+<<<<<<< HEAD
 .container {
+=======
+.payment-container {
+>>>>>>> c33449b07b067b0ae8941bb164bb869ef03060c3
     display: flex;
     justify-content: center;
     align-items: center;
