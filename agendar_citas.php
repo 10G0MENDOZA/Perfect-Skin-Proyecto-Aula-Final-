@@ -10,7 +10,35 @@
     <script src="https://checkout.bold.co/library/boldPaymentButton.js" async></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
+<style>
+    /* Asegúrate de que los campos tengan el mismo ancho */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"] {
+    width: 100%; /* Ajusta el ancho para que ocupen todo el contenedor */
+    padding: 10px; /* Añade algo de padding para que se vean mejor */
+    margin-bottom: 15px; /* Espaciado entre campos */
+    border: 1px solid #ccc; /* Añade un borde suave */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Asegúrate de que el padding no afecte al tamaño total */
+}
 
+/* Estilo adicional para los botones */
+.boton-reserva {
+    background-color: #00909E; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.boton-reserva:hover {
+    background-color: #007B7F; /* Color más oscuro al pasar el mouse */
+}
+
+</style>
 <body>
 
     <section class="citas mt-5">

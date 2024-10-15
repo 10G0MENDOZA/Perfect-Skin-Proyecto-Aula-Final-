@@ -19,23 +19,36 @@ if ($conn->connect_error) {
 
 // Verificar si el formulario fue enviado
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    
-    // Consulta para validar si el usuario y contraseña existen
-    $sql = "SELECT * FROM administrador WHERE usuario = ? AND contraseña = MD5(?)";
+    // Obtener y limpiar los datos del formulario
+    $username = htmlspecialchars(trim($_POST['username']));
+    $password = $_POST['password']; // No limpiamos la contraseña, ya que será encriptada
+
+    // Consulta para verificar si el usuario existe
+    $sql = "SELECT * FROM usuarios_admin WHERE usuario = ?";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ss", $username, $password);
+    $stmt->bind_param("s", $username);
     $stmt->execute();
     $result = $stmt->get_result();
 
     if ($result->num_rows == 1) {
-        // Si los datos coinciden, redirigir a la página del administrador
-        $_SESSION['admin'] = $username; // Guardar el usuario en la sesión
-        header("Location: administrador.php");
-        exit();
+        // Si el usuario existe, obtener la contraseña almacenada
+        $admin = $result->fetch_assoc();
+        $hash_password = $admin['contraseña']; // Asegúrate de que en la BD la contraseña esté encriptada con password_hash()
+
+        // Verificar la contraseña
+        if (password_verify($password, $hash_password)) {
+            // Si la contraseña es correcta, iniciar sesión
+            $_SESSION['admin'] = $username;
+            header("Location: administrador.php"); // Redirigir a la página del administrador
+            exit();
+        } else {
+            // Contraseña incorrecta
+            $error = "Usuario o contraseña incorrecto";
+            header("Location: login_admin.php?error=" . urlencode($error));
+            exit();
+        }
     } else {
-        // Si las credenciales son incorrectas, redirigir al formulario con un mensaje de error
+        // Usuario no encontrado
         $error = "Usuario o contraseña incorrecto";
         header("Location: login_admin.php?error=" . urlencode($error));
         exit();
