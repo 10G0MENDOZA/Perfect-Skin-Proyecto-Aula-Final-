@@ -467,7 +467,7 @@
           <p>
           La reserva fue sencilla y rápida, y el servicio en el spa fue excepcional. ¡Recomiendo ampliamente!
           </p>
-          <img src="img/pelu.jpg" alt="user" />
+          <img src="img/peluffo.jpeg" alt="user" />
           <h5>David Pelufo</h5>
           <h6>Desarrollador de software</h6>
         </div>
