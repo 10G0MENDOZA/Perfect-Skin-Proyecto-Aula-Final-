@@ -2,78 +2,117 @@
 
 /* Aplicar la fuente globalmente */
 body {
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Cormorant Garamond", serif; /* Fuente actualizada */
     font-size: 25px; /* Tamaño de fuente ajustado */
     margin: 0;
     padding: 0;
+    background-color: #f7f7f7; /* Fondo claro */
 }
 
+/* Estilo para el encabezado */
 h2 {
     text-align: center;
-    background-color: #f69f9f;
-    color: #fff;
+    background-color: #f69f9f; /* Color rosado claro */
+    color: #fff; /* Texto blanco */
     padding: 10px;
 }
 
+/* Estilo para el formulario */
 form {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 20px auto; /* Centrado en la página */
+    padding: 20px; /* Espaciado interno */
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
+/* Estilo para las etiquetas */
 label {
-    display: block;
-    margin-bottom: 10px;
+    display: block; /* Hacer que las etiquetas ocupen toda la línea */
+    margin-bottom: 10px; /* Espaciado inferior */
 }
 
+/* Estilo para campos de entrada */
 input[type="text"],
 input[type="email"],
 input[type="date"],
 input[type="time"] {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    width: calc(100% - 20px); /* Ancho total menos espaciado */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 10px; /* Espaciado inferior */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluir padding y border en el ancho total */
 }
 
+/* Estilo para el botón */
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: #f89b99;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    background-color: #f89b99; /* Color rosado */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar el ratón */
+    transition: background-color 0.3s ease; /* Transición suave */
 }
 
+/* Hover del botón */
 button:hover {
-    background-color: #029c6d;
+    background-color: #029c6d; /* Color verde al pasar el ratón */
 }
 
+/* Estilo para el mensaje de confirmación */
 .message {
-    text-align: center;
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #e7f9e7;
-    color: #2d8f2d;
-    border: 1px solid #2d8f2d;
-    border-radius: 5px;
-    display: none;
+    text-align: center; /* Alinear texto al centro */
+    margin-top: 20px; /* Espaciado superior */
+    padding: 20px; /* Espaciado interno */
+    background-color: #e7f9e7; /* Fondo verde claro */
+    color: #2d8f2d; /* Texto verde oscuro */
+    border: 1px solid #2d8f2d; /* Borde verde oscuro */
+    border-radius: 5px; /* Bordes redondeados */
+    display: none; /* Oculto por defecto */
 }
 
+/* Estilo para el botón de regresar */
 .back-button {
-    display: block;
-    text-align: center;
-    background-color: #03AE85;
-    color: #fff;
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    width: 200px;
-    margin: 20px auto;
+    display: block; /* Mostrar como bloque */
+    text-align: center; /* Centrar texto */
+    background-color: #03AE85; /* Color verde */
+    color: #fff; /* Texto blanco */
+    padding: 10px; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 20px; /* Espaciado superior */
+    width: 200px; /* Ancho fijo */
+    margin: 20px auto; /* Centrado */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    body {
+        font-size: 18px; /* Ajustar tamaño de fuente en pantallas pequeñas */
+    }
+
+    h2 {
+        font-size: 2rem; /* Tamaño del encabezado en pantallas pequeñas */
+    }
+
+    form {
+        padding: 15px; /* Reducir espaciado interno */
+        margin: 15px; /* Reducir márgenes */
+    }
+
+    button,
+    .back-button {
+        font-size: 0.9rem; /* Tamaño del texto del botón en pantallas pequeñas */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="time"] {
+        font-size: 1rem; /* Tamaño de texto de los campos de entrada en pantallas pequeñas */
+    }
 }

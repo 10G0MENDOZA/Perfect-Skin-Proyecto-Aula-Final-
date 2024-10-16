@@ -2,21 +2,23 @@
 
 /* Estilos globales */
 body {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 18px;
+    font-family: "Cormorant Garamond", serif; /* Fuente actualizada */
+    font-size: 18px; /* Tamaño de fuente base */
     margin: 0;
     padding: 0;
     background-color: #f9f9f9; /* Fondo claro */
-    color: #333;
+    color: #333; /* Color de texto */
     text-align: center; /* Centrar texto */
 }
 
+/* Estilo para el título */
 h2 {
     color: #eaafaf; /* Color rosado personalizado */
     margin-top: 50px; /* Margen superior */
     font-size: 2.5rem; /* Tamaño de fuente para el título */
 }
 
+/* Estilo para el párrafo */
 p {
     font-size: 1.2rem; /* Tamaño de fuente para el párrafo */
     margin-bottom: 30px; /* Margen inferior */
@@ -34,17 +36,27 @@ button {
     transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
 }
 
+/* Hover del botón */
 button:hover {
     background-color: #d69c9c; /* Color más oscuro para el hover */
 }
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Ajustar tamaño de fuente en pantallas pequeñas */
+    }
+
     h2 {
-        font-size: 2rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+        font-size: 2rem; /* Tamaño de fuente más pequeño para el título */
+    }
+
+    p {
+        font-size: 1rem; /* Tamaño de fuente más pequeño para el párrafo */
     }
 
     button {
         font-size: 1rem; /* Tamaño de fuente del botón más pequeño */
+        padding: 8px 15px; /* Ajustar el espaciado interno del botón */
     }
 }

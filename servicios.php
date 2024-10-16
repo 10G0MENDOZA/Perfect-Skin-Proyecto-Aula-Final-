@@ -74,8 +74,8 @@
         <span class="close" onclick="hideModal('modal1')">&times;</span>
         <h2>Facial Clásico</h2>
         <p>Descripción del servicio Facial Clásico.</p>
-        <p>40 MINUTOS - $166.600 COP</p>
-        <a href="agendar_citas.php?servicio=Facial%20Clásico&precio=166600" class="button">Reservar</a>
+        <p>1 HORA - $80.000 COP</p>
+        <a href="agendar_citas.php?servicio=Facial%20Clásico&precio=80.000" class="button">Reservar</a>
     </div>
 </div>
 
@@ -85,8 +85,8 @@
         <span class="close" onclick="hideModal('modal2')">&times;</span>
         <h2>Facial Diamante</h2>
         <p>Descripción detallada del servicio Facial Diamante.</p>
-        <p>40 MINUTOS - $150.000 COP</p>
-        <a href="agendar_citas.php?servicio=Facial%20Diamante&precio=150000" class="button">Reservar</a>
+        <p>1 HORA - $70.000 COP</p>
+        <a href="agendar_citas.php?servicio=Facial%20Diamante&precio=70.000" class="button">Reservar</a>
     </div>
 </div>
 
@@ -96,8 +96,8 @@
         <span class="close" onclick="hideModal('modal3')">&times;</span>
         <h2>Luminous Face</h2>
         <p>Descripción detallada del servicio Luminous Face.</p>
-        <p>40 MINUTOS - $140.000 COP</p>
-        <a href="agendar_citas.php?servicio=Luminous%20Face&precio=140000" class="button">Reservar</a>
+        <p>1 HORA - $100.000 COP</p>
+        <a href="agendar_citas.php?servicio=Luminous%20Face&precio=100.000" class="button">Reservar</a>
     </div>
 </div>
 
@@ -107,8 +107,8 @@
         <span class="close" onclick="hideModal('modal4')">&times;</span>
         <h2>Dermaplaning</h2>
         <p>Descripción detallada del servicio Dermaplaning.</p>
-        <p>40 MINUTOS - $140.000 COP</p>
-        <a href="agendar_citas.php?servicio=Dermaplaning&precio=140000" class="button">Reservar</a>
+        <p> 1 HORA- $90.000 COP</p>
+        <a href="agendar_citas.php?servicio=Dermaplaning&precio=90.000" class="button">Reservar</a>
     </div>
 </div>
 
@@ -118,8 +118,8 @@
         <span class="close" onclick="hideModal('modal5')">&times;</span>
         <h2>Masaje Relajante</h2>
         <p>Descripción detallada del servicio Masaje relajante.</p>
-        <p>40 MINUTOS - $140.000 COP</p>
-        <a href="agendar_citas.php?servicio=Masaje%20Relajante&precio=140000" class="button">Reservar</a>
+        <p>1 HORA - $120.000 COP</p>
+        <a href="agendar_citas.php?servicio=Masaje%20Relajante&precio=120.000" class="button">Reservar</a>
     </div>
 </div>
 
@@ -129,8 +129,8 @@
         <span class="close" onclick="hideModal('modal6')">&times;</span>
         <h2>Hidralips</h2>
         <p>Descripción detallada del servicio Hidralips.</p>
-        <p>40 MINUTOS - $140.000 COP</p>
-        <a href="agendar_citas.php?servicio=Hidralips&precio=140000" class="button">Reservar</a>
+        <p>1 HORA - $85.000 COP</p>
+        <a href="agendar_citas.php?servicio=Hidralips&precio=85.000" class="button">Reservar</a>
     </div>
 </div>
 

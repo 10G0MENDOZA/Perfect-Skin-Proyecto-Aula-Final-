@@ -1,38 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+/* Estilo Global */
 * {
     box-sizing: border-box;
     font-family: "Cormorant Garamond", serif;
-    font-size: 25px; /* Tamaño de fuente ajustado a 25px */
+    font-size: 25px; /* Tamaño de fuente ajustado */
 }
 
 body {
-    font-family: "Cormorant Garamond", serif; /* Fuente Cormorant Garamond */
     margin: 0;
     padding: 0;
+    background-color: #fff5f5; /* Fondo claro */
 }
 
+/* Estilo de Encabezados */
 h2 {
     text-align: center;
     background-color: #ed9797;
     color: #fff;
     padding: 10px;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
+/* Estilo de Tablas */
 table {
     width: 80%;
     border-collapse: collapse;
     margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
 
-table,
-th,
-td {
+table, th, td {
     border: 1px solid #030303;
 }
 
-th,
-td {
+th, td {
     padding: 10px;
     text-align: center;
 }
@@ -40,12 +43,14 @@ td {
 th {
     background-color: #ef9f9f;
     color: #fff;
+    font-weight: 600;
 }
 
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
+/* Estilo de Enlaces */
 a {
     display: block;
     text-align: center;
@@ -56,4 +61,25 @@ a {
     border-radius: 5px;
     margin: 20px auto;
     width: 150px;
+    transition: background-color 0.3s;
+}
+
+/* Efecto Hover en Enlaces */
+a:hover {
+    background-color: #0056b3;
+}
+
+/* Media Query para Pantallas Pequeñas */
+@media (max-width: 768px) {
+    table {
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    a {
+        width: 100%;
+    }
 }

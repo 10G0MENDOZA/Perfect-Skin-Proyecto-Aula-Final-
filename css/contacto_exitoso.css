@@ -6,11 +6,11 @@ body {
     font-size: 18px;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9; /* Fondo claro */
+    background-color: #fff5f5; /* Fondo claro */
     color: #333;
 }
 
-/* Estilo para el contenedor del mensaje */
+/* Contenedor del mensaje */
 .message-container {
     display: flex;
     justify-content: center; /* Centrar horizontalmente */
@@ -18,71 +18,71 @@ body {
     height: 100vh; /* Altura completa de la ventana */
 }
 
-/* Estilo para la caja del mensaje */
+/* Caja del mensaje */
 .message-box {
-    max-width: 600px; /* Ancho máximo de la caja */
+    max-width: 600px;
     padding: 30px;
-    background-color: #fff; /* Fondo blanco para la caja */
+    background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    text-align: center; /* Alinear texto al centro */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-/* Estilo para el título */
+/* Título */
 .message-box h1 {
-    color: #eaafaf; /* Color rosado personalizado */
-    font-size: 2.5rem; /* Tamaño del título */
-    margin-bottom: 20px; /* Espacio inferior */
+    color: #ed9797; /* Rosado */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
-/* Estilo para el párrafo */
+/* Párrafo */
 .message-box p {
-    font-size: 1.2rem; /* Tamaño del texto */
-    margin-bottom: 30px; /* Espacio inferior */
-    color: #666; /* Color gris */
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666;
 }
 
-/* Estilo para el botón */
+/* Botón */
 .btn {
     display: inline-block;
     width: 100%;
     padding: 10px;
     border: none;
-    background-color: #eaafaf; /* Color rosado personalizado */
+    background-color: #f7aba1; /* Rosado personalizado */
     color: white;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1.2rem; /* Tamaño de la fuente */
-    transition: background-color 0.3s ease; /* Transición de color */
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #d69c9c; /* Color rosado más oscuro al pasar el ratón */
+    background-color: #fa5757; /* Rosado más oscuro */
 }
 
-/* Estilo del pie de página */
+/* Pie de página */
 footer {
-    background-color: #333; /* Fondo oscuro */
-    color: white; /* Texto blanco */
-    text-align: center; /* Alinear texto al centro */
+    background-color: #333;
+    color: white;
+    text-align: center;
     padding: 20px;
-    font-size: 1rem; /* Tamaño de la fuente */
+    font-size: 1rem;
     margin-top: 50px;
-    border-top: 5px solid #eaafaf; /* Borde superior rosado personalizado */
+    border-top: 5px solid #ed9797; /* Borde rosado */
 }
 
-/* Estilos responsivos */
+/* Responsividad */
 @media (max-width: 768px) {
     .message-box {
         padding: 20px;
-        margin: 30px auto; /* Centrar la caja */
+        margin: 30px auto;
     }
 
     .message-box h1 {
-        font-size: 2rem; /* Tamaño reducido en móviles */
+        font-size: 2rem;
     }
 
     .btn {
-        font-size: 1rem; /* Tamaño del botón en móviles */
+        font-size: 1rem;
     }
 }

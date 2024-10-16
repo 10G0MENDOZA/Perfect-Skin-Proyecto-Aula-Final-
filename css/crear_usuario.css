@@ -5,10 +5,11 @@ body {
     font-family: "Cormorant Garamond", serif;
     font-size: 25px; /* Tamaño de fuente ajustado */
     background-color: #f7f7f7;
+    line-height: 1.6; /* Mejora la legibilidad */
 }
 
 header {
-    background-color: #f6b8b8; /* Cambiado a verde */
+    background-color: #f6b8b8; /* Color rosado claro */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -16,45 +17,100 @@ header {
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* Tamaño del título */
     margin: 0;
 }
 
+/* Contenedor principal */
 .container {
-    max-width: 600px;
-    margin: 50px auto;
+    max-width: 600px; /* Ancho máximo */
+    margin: 50px auto; /* Centrado en la página */
     padding: 30px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos de etiquetas */
 .form-label {
     font-weight: bold;
 }
 
+/* Estilo de botón primario */
 .btn-primary {
-    background-color: #f48f8f; /* Cambiado a verde */
+    background-color: #f48f8f; /* Color rosado */
     border: none;
-}
-
-.btn-primary:hover {
-    background-color: #f3b4b4; /* Cambiado a un verde más oscuro */
-}
-
-.input-group {
-    margin-bottom: 20px;
-}
-
-.input-group-text {
-    background-color: #f5b4b4; /* Cambiado a verde */
     color: white;
+    padding: 12px 20px;
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de texto del botón */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+    transition: background-color 0.3s ease; /* Transición suave */
 }
 
+/* Hover del botón primario */
+.btn-primary:hover {
+    background-color: #f3b4b4; /* Color rosado más oscuro */
+}
+
+/* Grupo de entrada */
+.input-group {
+    margin-bottom: 20px; /* Espaciado entre grupos */
+    display: flex; /* Usar flexbox para la alineación */
+}
+
+/* Estilos del texto del grupo de entrada */
+.input-group-text {
+    background-color: #f5b4b4; /* Color rosado */
+    color: white;
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px 0 0 5px; /* Bordes redondeados en la izquierda */
+}
+
+/* Estilos de los campos de entrada */
 .input-group .form-control {
-    border-left: 1px solid #eba1a1; /* Cambiado a verde */
+    border-left: 1px solid #eba1a1; /* Borde izquierdo rosado */
+    border-radius: 0 5px 5px 0; /* Bordes redondeados en la derecha */
+    padding: 10px; /* Espaciado interno */
 }
 
+/* Estilos de la selección */
 .input-group .form-select {
-    border-left: 1px solid #f4b1ad; /* Cambiado a verde */
+    border-left: 1px solid #f4b1ad; /* Borde izquierdo rosado */
+    border-radius: 0 5px 5px 0; /* Bordes redondeados en la derecha */
+    padding: 10px; /* Espaciado interno */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    body {
+        font-size: 18px; /* Ajustar tamaño de fuente en pantallas pequeñas */
+    }
+
+    header h1 {
+        font-size: 2rem; /* Tamaño de título en pantallas pequeñas */
+    }
+
+    .container {
+        padding: 20px; /* Reducir espaciado interno */
+        margin: 20px; /* Reducir márgenes */
+    }
+
+    .btn-primary {
+        font-size: 0.9rem; /* Tamaño del botón en pantallas pequeñas */
+    }
+
+    .input-group {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+    }
+
+    .input-group .form-control,
+    .input-group .form-select {
+        width: 100%; /* Asegurarse de que ocupen el 100% del ancho */
+        border-radius: 5px; /* Bordes redondeados */
+    }
+
+    .input-group-text {
+        border-radius: 5px 5px 0 0; /* Bordes redondeados en la parte superior */
+    }
 }

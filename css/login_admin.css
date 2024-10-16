@@ -1,58 +1,83 @@
-
 /* General Styles */
-
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 * {
-    box-sizing: border-box;
-   
-    font-family: "Cormorant Garamond", serif;
-    font-size: 20px;
+    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el tamaño total */
+    font-family: "Cormorant Garamond", serif; /* Fuente global */
+    font-size: 20px; /* Tamaño de fuente base */
+    margin: 0; /* Eliminar márgenes predeterminados */
+    padding: 0; /* Eliminar padding predeterminado */
 }
+
+body {
+    background-color: #f4f4f9; /* Fondo claro para el cuerpo */
+    display: flex; /* Usar Flexbox para centrar */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Altura completa de la ventana */
+}
+
 .login-container {
-    max-width: 400px;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: transparent;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px; /* Aumenta el ancho máximo a 500px */
-    min-height: 300px; 
+    max-width: 500px; /* Ancho máximo de 500px */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Esquinas redondeadas */
+    background-color: #ffffff; /* Fondo blanco */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%; /* Ocupa el 100% del contenedor padre */
+    min-height: 300px; /* Altura mínima */
 }
 
 .login-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color:whitesmoke;
+    text-align: center; /* Centrar texto */
+    margin-bottom: 20px; /* Margen inferior */
+    color: whitesmoke; /* Color del texto del título */
 }
 
 .login-container .input-group {
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Margen inferior para los grupos de entrada */
 }
 
 .login-container .input-group-text {
-    background-color: #f2bfbf;
-    color: white;
-    border: none;
+    background-color: #f2bfbf; /* Color de fondo del texto del grupo de entrada */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
 }
 
 .login-container .form-control {
-    border-radius: 0 5px 5px 0;
-    border-left: none;
+    border-radius: 0 5px 5px 0; /* Esquinas redondeadas para el campo de entrada */
+    border-left: none; /* Sin borde izquierdo */
 }
 
 .login-container .btn {
-    background-color: #f2bfbf;  
-    color: white;
-    width: 100%;
+    background-color: #f2bfbf; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    width: 100%; /* Botón ocupa el 100% del ancho */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
 }
 
 .login-container .btn:hover {
-    background-color: #676f86;
+    background-color: #676f86; /* Color más oscuro al pasar el ratón */
 }
 
 .login-container .form-text {
-    text-align: center;
-    margin-top: 10px;
+    text-align: center; /* Centrar texto en el área de texto */
+    margin-top: 10px; /* Margen superior */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 15px; /* Reducir espaciado interno en pantallas pequeñas */
+        min-height: 250px; /* Reducir altura mínima en pantallas pequeñas */
+    }
+
+    .login-container h2 {
+        font-size: 1.5rem; /* Ajustar tamaño de fuente del título */
+    }
+
+    .login-container .btn {
+        font-size: 1rem; /* Ajustar tamaño de fuente del botón */
+        padding: 10px; /* Reducir padding en el botón */
+    }
 }
