@@ -311,7 +311,7 @@
                                         <p>Relájate y protege tu piel con nuestro servicio de protector solar
                                             personalizado.</p>
                                         <span class="precio-servicio">$41.500 COP</span>
-                                        <a href="#" class="btn-servicio">Comprar</a>
+                                        <a href="producto.php" class="btn-servicio">ver más</a>
                                     </div>
                                 </div>
                             </div>
@@ -327,7 +327,7 @@
                                         <p>Mejora la apariencia de tu piel con nuestro tratamiento especializado
                                             antiedad.</p>
                                         <span class="precio-servicio">$80.000 COP</span>
-                                        <a href="#" class="btn-servicio">Comprar</a>
+                                        <a href="producto.php" class="btn-servicio">ver más</a>
                                     </div>
                                 </div>
                             </div>
@@ -344,7 +344,7 @@
                                             fresca e hidratada respetando el pH de la piel sin dañar su barrera natur
                                         </p>
                                         <span class="precio-servicio">$40.000 COP</span>
-                                        <a href="#" class="btn-servicio">Comprar</a>
+                                        <a href="producto.php" class="btn-servicio">ver más</a>
                                     </div>
                                 </div>
                             </div>
@@ -361,7 +361,7 @@
                                             fortalecida e hidratada gracias a su formulación con 2 densidades de Ácido
                                             Hialurónico, Pro-Vitamina B5 y Glicerina.</p>
                                         <span class="precio-servicio">$70.000 COP</span>
-                                        <a href="#" class="btn-servicio">Comprar</a>
+                                        <a href="producto.php" class="btn-servicio">ver más</a>
                                     </div>
                                 </div>
                             </div>
@@ -378,7 +378,7 @@
                                             hidratación,
                                             dejando la piel con una sensación refrescante, limpia y suave.</p>
                                         <span class="precio-servicio">$35.000 COP</span>
-                                        <a href="#" class="btn-servicio">Comprar</a>
+                                        <a href="producto.php" class="btn-servicio">ver más</a>
                                     </div>
                                 </div>
                             </div>
@@ -396,7 +396,7 @@
                                             y efectiva en un solo paso, dejando la piel completamente limpia de
                                             residuos.</p>
                                         <span class="precio-servicio">$100.000 COP</span>
-                                        <a href="#" class="btn-servicio">comprar</a>
+                                        <a href="producto.php" class="btn-servicio">ver más</a>
                                     </div>
                                 </div>
                             </div>
@@ -464,7 +464,7 @@
           <p>
           La reserva fue sencilla y rápida, y el servicio en el spa fue excepcional. ¡Recomiendo ampliamente!
           </p>
-          <img src="img/pelu.jpg" alt="user" />
+          <img src="img/peluffo.jpeg" alt="user" />
           <h5>David Pelufo</h5>
           <h6>Desarrollador de software</h6>
         </div>
@@ -490,7 +490,7 @@
                     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
                     <script src="js/swiper_setup.js"></script>
                     <script src="js/swiper_servicios.js"></script>
-                    <script src="js/carrito.js"></script>
+                    
                     <script src="js/musica.js"></script>
                     <script src="js/carousel_Navigation.js"></script>
                     <script src="js/galeria.js"></script>                              
