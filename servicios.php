@@ -75,7 +75,7 @@
         <h2>Facial Clásico</h2>
         <p>Descripción del servicio Facial Clásico.</p>
         <p>1 HORA - $80.000 COP</p>
-        <a href="agendar_citas.php?servicio=Facial%20Clásico&precio=166600" class="button">Reservar</a>
+        <a href="agendar_citas.php?servicio=Facial%20Clásico&precio=80.000" class="button">Reservar</a>
     </div>
 </div>
 
@@ -97,7 +97,7 @@
         <h2>Luminous Face</h2>
         <p>Descripción detallada del servicio Luminous Face.</p>
         <p>1 HORA - $100.000 COP</p>
-        <a href="agendar_citas.php?servicio=Luminous%20Face&precio=.100.000" class="button">Reservar</a>
+        <a href="agendar_citas.php?servicio=Luminous%20Face&precio=100.000" class="button">Reservar</a>
     </div>
 </div>
 
