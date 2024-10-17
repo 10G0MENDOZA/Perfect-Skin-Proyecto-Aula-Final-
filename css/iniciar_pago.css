@@ -11,7 +11,6 @@ body {
 }
 
 /* Contenedor del botón de pago */
-<<<<<<< HEAD
 .payment-container {
     display: flex; /* Usar Flexbox para centrar contenido */
     flex-direction: column; /* Alinear en columna */
@@ -23,18 +22,6 @@ body {
     border-radius: 8px; /* Esquinas redondeadas */
     max-width: 400px; /* Ancho máximo */
     text-align: center; /* Centrar texto */
-=======
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    max-width: 400px;
-    text-align: center;
->>>>>>> 6b9c49895414a974893e38a9eb2d41d5d0a279b4
 }
 
 /* Estilo del botón de pago */

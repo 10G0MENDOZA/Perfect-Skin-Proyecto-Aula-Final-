@@ -2,7 +2,8 @@
 
 /* Estilos Globales */
 body {
-    font-family: "Cormorant Garamond", serif;
+    
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     margin: 0;
     padding: 0;
@@ -100,7 +101,7 @@ footer {
 
 .left-side {
     flex: 1;
-    background: url('img/fondo_cita.jpg') no-repeat center center;
+    background: url('img/acercanotros3.jpg') no-repeat center center;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -132,7 +133,6 @@ footer {
     input[type="submit"], .boton-reserva {
         font-size: 1rem;
     }
-<<<<<<< HEAD
 }
 
 /* Asegúrate de que los campos tengan el mismo ancho */
@@ -187,39 +187,3 @@ input[type="date"] {
     background-color: #dc3545; /* Rojo cuando está deshabilitado */
     cursor: not-allowed;
 }
-=======
-
-    .container-citas {
-        flex-direction: column;
-    }
-
-    .left-side, .right-side {
-        flex: unset;
-        height: auto;
-        padding: 20px;
-    }
-
-    .left-side img {
-        max-width: 90%;
-    }
-}
-
-@media (max-width: 480px) {
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    .citas {
-        margin: 15px;
-        padding: 15px;
-    }
-
-    input[type="submit"], .boton-reserva {
-        font-size: 0.9rem;
-    }
-
-    .left-side img {
-        max-width: 100%;
-    }
-}
->>>>>>> 52e403e4f306df2cae26c0ebd2e7f073ff08fa96

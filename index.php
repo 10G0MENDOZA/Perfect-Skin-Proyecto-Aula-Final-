@@ -10,13 +10,9 @@
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<<<<<<< HEAD
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     
 
-=======
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">    
->>>>>>> 52e403e4f306df2cae26c0ebd2e7f073ff08fa96
 
 
 </head>
