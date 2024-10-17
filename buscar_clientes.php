@@ -57,7 +57,7 @@ $result = $stmt->get_result();
                 <th>Nombre</th>
                 <th>Correo</th>
                 <th>Teléfono</th>
-                <th>Acciones</th>
+                <th>Accioness</th>
             </tr>
         </thead>
         <tbody>

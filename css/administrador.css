@@ -9,10 +9,14 @@
 
 body {
     background-color: rgb(247, 247, 247);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evitar scroll horizontal */
 }
 
+/* Header */
 header {
-    background-color: #f48f8f; /* Color de fondo del header */
+    background-color: #f48f8f;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -24,6 +28,7 @@ header h1 {
     margin: 0;
 }
 
+/* Contenedor Principal */
 .container {
     max-width: 600px;
     margin: 50px auto;
@@ -33,10 +38,13 @@ header h1 {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Etiquetas del Formulario */
 .form-label {
     font-weight: bold;
+    margin-bottom: 8px;
 }
 
+/* Botón Menú */
 .menu-button-container {
     display: flex;
     justify-content: flex-start;
@@ -48,7 +56,7 @@ header h1 {
 }
 
 button {
-    background-color: #f48f8f; /* Color del botón */
+    background-color: #f48f8f;
     color: #ffffff;
     border: none;
     padding: 10px 15px;
@@ -62,14 +70,15 @@ button {
 }
 
 button:hover {
-    background-color: #f3b4b4; /* Color al pasar el cursor por encima */
+    background-color: #f3b4b4;
 }
 
+/* Opciones del Menú */
 .options {
     display: none;
     flex-direction: column;
     background: #ffffff;
-    border: 1px solid #f48f8f; /* Borde de opciones */
+    border: 1px solid #f48f8f;
     padding: 10px;
     border-radius: 5px;
     position: fixed;
@@ -81,7 +90,7 @@ button:hover {
 
 .options a {
     text-decoration: none;
-    color: #f48f8f; /* Color del enlace */
+    color: #f48f8f;
     margin: 0.5rem 0;
     transition: color 0.3s, background-color 0.3s;
     display: flex;
@@ -90,7 +99,7 @@ button:hover {
 }
 
 .options a:hover {
-    background-color: #f48f8f; /* Color al pasar el cursor en enlace */
+    background-color: #f48f8f;
     color: #ffffff;
     padding: 0.5rem;
     border-radius: 4px;
@@ -100,28 +109,74 @@ i.bx {
     font-size: 1.5rem;
 }
 
+/* Grupo de Input */
 .input-group {
     margin-bottom: 20px;
 }
 
 .input-group-text {
-    background-color: #f48f8f; /* Color de fondo de input-group */
+    background-color: #f48f8f;
     color: white;
 }
 
-.input-group .form-control {
-    border-left: 1px solid #f48f8f; /* Borde del input */
-}
-
+.input-group .form-control,
 .input-group .form-select {
-    border-left: 1px solid #f48f8f; /* Borde del select */
+    border-left: 1px solid #f48f8f;
 }
 
+/* Botón Primario */
 .btn-primary {
-    background-color: #f48f8f; /* Cambiar a color de botón primario */
+    background-color: #f48f8f;
     border: none;
 }
 
 .btn-primary:hover {
-    background-color: #f3b4b4; /* Color al pasar el cursor */
+    background-color: #f3b4b4;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    button {
+        padding: 8px 12px;
+    }
+
+    .options {
+        top: 45px;
+        width: 80%; /* Asegura que las opciones se adapten a pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    button {
+        width: 100%; /* Botón que ocupa todo el ancho */
+        justify-content: center;
+    }
+
+    .options {
+        top: 40px;
+        left: 5px;
+        width: 90%; /* Ajuste extra en pantallas muy pequeñas */
+    }
+
+    i.bx {
+        font-size: 1.2rem;
+    }
 }

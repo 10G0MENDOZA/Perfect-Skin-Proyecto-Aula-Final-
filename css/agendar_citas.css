@@ -1,30 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-
-/* Estilos globales */
+/* Estilos Globales */
 body {
-    font-family: "Montserrat", Sans-serif;
+    font-family: "Cormorant Garamond", serif;
     font-size: 18px;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9; /* Fondo claro */
+    background-color: #f9f9f9;
     color: #333;
+    overflow-x: hidden; /* Evita scroll horizontal */
 }
 
+/* Títulos */
 h2 {
-    color: #eaafaf; /* Color rosado personalizado */
+    color: #eaafaf;
     text-align: center;
     margin-bottom: 20px;
     font-size: 2.5rem;
 }
 
-/* Estilo para la sección de citas */
+/* Sección de Citas */
 .citas {
     max-width: 600px;
-    margin: 50px auto; /* Centra la sección */
+    margin: 50px auto;
     padding: 30px;
-    background-color: #fff; /* Fondo blanco para el formulario */
+    background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .citas p {
@@ -39,51 +41,47 @@ h2 {
     color: #333;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="date"],
+/* Campos del Formulario */
+input[type="text"], 
+input[type="email"], 
+input[type="number"], 
+input[type="date"], 
 select {
     width: 100%;
     padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1rem;
-    margin-bottom: 20px;
-    box-sizing: border-box;
     transition: border-color 0.3s ease;
+    box-sizing: border-box;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="date"]:focus,
+input:focus, 
 select:focus {
-    border-color: #eaafaf; /* Borde rosado al enfocar */
+    border-color: #eaafaf;
     outline: none;
 }
 
-select {
-    font-size: 1rem;
-    background-color: white;
-    padding: 10px;
-}
-
-input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background-color: #eaafaf; /* Color rosado personalizado */
+/* Botón de Envío */
+input[type="submit"], .boton-reserva {
+    background-color: #eaafaf;
     color: white;
+    border: none;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.2rem;
+    width: 100%;
     transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover {
-    background-color: #d69c9c; /* Color más oscuro al pasar el ratón */
+input[type="submit"]:hover, 
+.boton-reserva:hover {
+    background-color: #d69c9c;
 }
 
-/* Estilo del pie de página */
+/* Estilo del Pie de Página */
 footer {
     background-color: #333;
     color: white;
@@ -91,10 +89,36 @@ footer {
     padding: 20px;
     font-size: 1rem;
     margin-top: 50px;
-    border-top: 5px solid #eaafaf; /* Borde superior rosado personalizado */
+    border-top: 5px solid #eaafaf;
 }
 
-/* Estilos responsivos */
+/* Layout de Pantalla Dividida */
+.container-citas {
+    display: flex;
+    height: 100vh;
+}
+
+.left-side {
+    flex: 1;
+    background: url('img/fondo_cita.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side img {
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+.right-side {
+    flex: 1;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Media Queries para Responsividad */
 @media (max-width: 768px) {
     .citas {
         padding: 20px;
@@ -105,9 +129,10 @@ footer {
         font-size: 2rem;
     }
 
-    input[type="submit"] {
+    input[type="submit"], .boton-reserva {
         font-size: 1rem;
     }
+<<<<<<< HEAD
 }
 
 /* Asegúrate de que los campos tengan el mismo ancho */
@@ -162,3 +187,39 @@ input[type="date"] {
     background-color: #dc3545; /* Rojo cuando está deshabilitado */
     cursor: not-allowed;
 }
+=======
+
+    .container-citas {
+        flex-direction: column;
+    }
+
+    .left-side, .right-side {
+        flex: unset;
+        height: auto;
+        padding: 20px;
+    }
+
+    .left-side img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .citas {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    input[type="submit"], .boton-reserva {
+        font-size: 0.9rem;
+    }
+
+    .left-side img {
+        max-width: 100%;
+    }
+}
+>>>>>>> 52e403e4f306df2cae26c0ebd2e7f073ff08fa96

@@ -1,16 +1,29 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    font-family: Arial, sans-serif; /* Fuente base */
+    background-color: #f4f4f9; /* Fondo claro */
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    display: flex; /* Usar Flexbox para centrar */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Altura completa de la ventana */
 }
 
 /* Contenedor del botón de pago */
+<<<<<<< HEAD
+.payment-container {
+    display: flex; /* Usar Flexbox para centrar contenido */
+    flex-direction: column; /* Alinear en columna */
+    justify-content: center; /* Centrar contenido */
+    align-items: center; /* Centrar contenido */
+    padding: 20px; /* Espaciado interno */
+    background-color: #ffffff; /* Fondo blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 8px; /* Esquinas redondeadas */
+    max-width: 400px; /* Ancho máximo */
+    text-align: center; /* Centrar texto */
+=======
 .container {
     display: flex;
     justify-content: center;
@@ -21,40 +34,41 @@ body {
     border-radius: 8px;
     max-width: 400px;
     text-align: center;
+>>>>>>> 6b9c49895414a974893e38a9eb2d41d5d0a279b4
 }
 
 /* Estilo del botón de pago */
 button.bold-payment-button {
     background-color: #e0f7fa; /* Azul claro */
     color: #00796b; /* Verde azulado oscuro */
-    border: none;
-    padding: 15px 30px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    border: none; /* Sin borde */
+    padding: 15px 30px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    border-radius: 5px; /* Esquinas redondeadas */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
 }
 
 /* Hover para el botón */
 button.bold-payment-button:hover {
-    background-color: #b2ebf2; /* Azul más claro */
+    background-color: #b2ebf2; /* Azul más claro al pasar el ratón */
 }
 
 /* Efectos adicionales */
 button.bold-payment-button:active {
-    transform: scale(0.98);
-    background-color: #80deea;
+    transform: scale(0.98); /* Reducción de tamaño al hacer clic */
+    background-color: #80deea; /* Color más oscuro al hacer clic */
 }
 
 /* Estilo responsivo */
 @media (max-width: 768px) {
     .payment-container {
-        max-width: 90%;
-        padding: 10px;
+        max-width: 90%; /* Ancho máximo en pantallas pequeñas */
+        padding: 10px; /* Espaciado interno reducido */
     }
 
     button.bold-payment-button {
-        font-size: 14px;
-        padding: 10px 20px;
+        font-size: 14px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+        padding: 10px 20px; /* Espaciado interno reducido en el botón */
     }
 }
