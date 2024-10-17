@@ -14,6 +14,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
+
 
 
 </head>
@@ -65,15 +67,17 @@
             <div class="logo">
                 <img class="logonav" src="img/1-2.png" width="200" alt="Logo de la página web">
             </div>
-            <ul class="flex menu">
+            <ul class="navlinks">
                 <li><a href="#header">Inicio</a></li>
                 <li><a href="#productos">Servicios</a></li>
-                <li><a href="#container">Acerca Nosotros</a></li>
+                <li><a href="#header-nosotros">Acerca Nosotros</a></li>
                 <li><a href="contacto.php">Contacto</a></li>
                 <li><a href="#servicios">Productos</a></li>
 
             </ul>
+            <img src="img/menu.jpeg" alt="" class="menubtn">
         </nav>
+       
 
         <div class="video-wrapper">
             <video autoplay muted loop>
@@ -100,7 +104,9 @@
         </div>
     </header>
 
-
+   
+            
+    </div>
 
     <div class="ungle">
         <span class="ir"><i class="arriba fa-solid fa-angles-up" aria-hidden="true"></i></span>
@@ -122,10 +128,10 @@
 
 
 
-    <div class="header-nosotros">
+    <div id = "header-nosotros" class="header-nosotros">
         <h1>Nosotros</h1>
         
-      </div>
+    </div>
   
 
     <div id="container" class="container">
@@ -496,7 +502,17 @@
                     
                     <script src="js/musica.js"></script>
                     <script src="js/carousel_Navigation.js"></script>
-                    <script src="js/galeria.js"></script>                              
+                    <script src="js/galeria.js"></script>      
+                    <script>
+                               const menubtn = document.querySelector('.menubtn')
+                             const navlinks = document.querySelector('.flexmenu')
+
+                               menubtn.addEventListener('click' ,()=>{
+                               navlinks.classList.toggle('movil-menu')
+                                })
+    
+
+                        </script>                        
 </body>
 
 </html>
