@@ -77,8 +77,13 @@
         <img src="img/facialclasico.jpg" alt="Jet Lag S.O.S" class="modal-img">
         <span class="close" onclick="hideModal('modal1')">&times;</span>
         <h2>Facial Clásico</h2>
-        <p>Descripción del servicio Facial Clásico.</p>
-        <p>1 HORA - $80.000 COP</p>
+        <p class="benefits-title">Beneficios:</p>
+        <ul class="benefits-list">
+            <li>Reduce la aparición de poros y arrugas.</li>
+            <li>Mejora la textura y la elasticidad de la piel.</li>
+            <li>Deja la piel con un aspecto más suave y radiante.</li>
+        </ul>
+        <p class="price"><span class="duration">1 HORA</span> - <span class="cost">$80.000 COP</span></p>
         <a href="agendar_citas.php?servicio=Facial%20Clásico&precio=80.000" class="button">Reservar</a>
     </div>
 </div>
@@ -88,8 +93,13 @@
         <img src="img/diamante.jpg" alt="Facial Diamante" class="modal-img1">
         <span class="close" onclick="hideModal('modal2')">&times;</span>
         <h2>Facial Diamante</h2>
-        <p>Descripción detallada del servicio Facial Diamante.</p>
-        <p>1 HORA - $70.000 COP</p>
+        <p class="benefits-title2">Beneficios:</p>
+        <ul class="benefits-list2">
+            <li>Elimina impurezas y toxinas.</li>
+            <li>Mejora la circulacion sanguinea y linfatica.</li>
+            <li>Deja la piel con un tono mas uniforme y claro.</li>
+        </ul>
+        <p class="price"><span class="duration">1 HORA</span> - <span class="cost">$70.000 COP</span></p>
         <a href="agendar_citas.php?servicio=Facial%20Diamante&precio=70.000" class="button">Reservar</a>
     </div>
 </div>
@@ -99,8 +109,13 @@
         <img src="img/luminous.jpg" alt="Luminous Face" class="modal-img">
         <span class="close" onclick="hideModal('modal3')">&times;</span>
         <h2>Luminous Face</h2>
-        <p>Descripción detallada del servicio Luminous Face.</p>
-        <p>1 HORA - $100.000 COP</p>
+        <p class="benefits-title">Beneficios:</p>
+        <ul class="benefits-list3">
+            <li>Mejora la calidad y brillo de la piel.</li>
+            <li>Reduce la aparicion de manchas y hiperpigmentacion.</li>
+            <li>Deja la piel con un tono mas uniforme y radiante.</li>
+        </ul>
+        <p class="price"><span class="duration">1 HORA</span> - <span class="cost">$100.000 COP</span></p>
         <a href="agendar_citas.php?servicio=Luminous%20Face&precio=100.000" class="button">Reservar</a>
     </div>
 </div>
@@ -110,8 +125,13 @@
         <img src="img/Dermaplaning-Facial.jpg" alt="Dermaplaning" class="modal-img">
         <span class="close" onclick="hideModal('modal4')">&times;</span>
         <h2>Dermaplaning</h2>
-        <p>Descripción detallada del servicio Dermaplaning.</p>
-        <p> 1 HORA- $90.000 COP</p>
+        <p class="benefits-title">Beneficios:</p>
+        <ul class="benefits-list4">
+            <li>Elimina celulas muertas y celulas de piel muerta.</li>
+            <li>Deja la piel suave y radiante.</li>
+            <li>Mejora la absorcion de productos de cuidado personal.</li>
+        </ul>
+        <p class="price"><span class="duration">1 HORA</span> - <span class="cost">$90.000 COP</span></p>
         <a href="agendar_citas.php?servicio=Dermaplaning&precio=90.000" class="button">Reservar</a>
     </div>
 </div>
@@ -121,8 +141,13 @@
         <img src="img/masaje.jpg" alt="Masaje Relajante" class="modal-img">
         <span class="close" onclick="hideModal('modal5')">&times;</span>
         <h2>Masaje Relajante</h2>
-        <p>Descripción detallada del servicio Masaje relajante.</p>
-        <p>1 HORA - $120.000 COP</p>
+        <p class="benefits-title">Beneficios:</p>
+        <ul class="benefits-list">
+            <li>Ayuda a calmar la mente y el cuerpo.</li>
+            <li>Reduce la produccion de hormonas del estres.</li>
+            <li>Mejora la calidad del sueño.</li>
+        </ul>
+        <p class="price"><span class="duration">1 HORA</span> - <span class="cost">$120.000 COP</span></p>
         <a href="agendar_citas.php?servicio=Masaje%20Relajante&precio=120.000" class="button">Reservar</a>
     </div>
 </div>
@@ -132,8 +157,13 @@
         <img src="img/hidralips.webp" alt="Hidralips" class="modal-img">
         <span class="close" onclick="hideModal('modal6')">&times;</span>
         <h2>Hidralips</h2>
-        <p>Descripción detallada del servicio Hidralips.</p>
-        <p>1 HORA - $85.000 COP</p>
+        <p class="benefits-title">Beneficios:</p>
+        <ul class="benefits-list">
+            <li>Hidrata profundamente los labios.</li>
+            <li>Mejora la textura y suavidad de los labios.</li>
+            <li>Repara y restaura la barrera natural de los labios.</li>
+        </ul>
+        <p class="price"><span class="duration">1 HORA</span> - <span class="cost">$85.000 COP</span></p>
         <a href="agendar_citas.php?servicio=Hidralips&precio=85.000" class="button">Reservar</a>
     </div>
 </div>

@@ -356,12 +356,14 @@ button {
     color: #f75c5c; /* Color de hover */
 }
 .modal-content h2 {
-    font-family: 'Playfair Display', serif; /* Elegante y profesional */
-    font-size: 26px;
+    font-family: 'Big Caslon', 'Sans-serif';
+    font-size: 30px;
     text-align: center;
     color: #f4abab; /* Color suave */
     margin-bottom: 10px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    line-height: 0.9em;
+    letter-spacing: 2px;
 }
 
 .modal-content p {
@@ -393,6 +395,7 @@ button {
         border-radius: 6px;
         font-weight: 500;
         color: var(--color);
+        
     }
     
 
@@ -425,6 +428,165 @@ button {
         background: #e62c2c;
         transition: background 0s;
       }
+
+      .benefits-title {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-top: 10px;
+        color: #007BFF;
+        text-align: center;
+    }
+    
+    .benefits-list {
+        list-style-type: none;
+        padding: 0;
+        text-align: left;
+        margin: 0 auto;
+        line-height: 1.6;
+        font-weight: bold;
+       
+       
+      
+      
+    }
+    
+    .benefits-list li {
+        margin: 0 auto;
+        padding-left: 15px;
+        color: #33383b;
+    }
+    .benefits-list li::before {
+        content: "✔";
+        position: absolute;
+        left: 100px; /* Ajuste la posición para estar más cerca del texto */
+        color: #ff9696;
+    }
+    .benefits-title2 {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-top: 10px;
+        color: #007BFF;
+    }
+    
+    .benefits-list2 {
+        list-style-type: none;
+        padding: 0;
+        text-align: left;
+        margin: 0 auto;
+        line-height: 1.6;
+        font-weight: bold;
+       
+       
+      
+      
+    }
+    
+    .benefits-list2 li {
+        margin: 0 auto;
+        padding-left: 15px;
+        color: #33383b;
+    }
+
+    
+    .benefits-list2 li::before {
+        content: "✔";
+        position: absolute;
+        left: 110px; /* Ajuste la posición para estar más cerca del texto */
+        color: #ff9696;
+        
+    }
+
+    .benefits-list3 li::before {
+        content: "✔";
+        position: absolute;
+        left: 80px; /* Ajuste la posición para estar más cerca del texto */
+        color: #ff9696;
+        
+    }
+    .benefits-list3 li {
+        margin: 0 auto;
+        padding-left: 15px;
+        color: #33383b;
+    }
+
+     
+    .benefits-list3 {
+        list-style-type: none;
+        padding: 0;
+        text-align: left;
+        margin: 0 auto;
+        line-height: 1.6;
+        font-weight: bold;
+       
+     }
+
+     .benefits-list4 li::before {
+        content: "✔";
+        position: absolute;
+        left: 80px; /* Ajuste la posición para estar más cerca del texto */
+        color: #ff9696;
+        
+    }
+    .benefits-list4 li {
+        margin: 0 auto;
+        padding-left: 15px;
+        color: #33383b;
+    }
+
+    .benefits-list4{
+        list-style-type: none;
+        padding: 0;
+        text-align: left;
+        margin: 0 auto;
+        line-height: 1.6;
+        font-weight: bold;
+       
+     }
+
+
+     
+     
+     
+       
+
+       
+    
+
+   
+    
+   
+        
+    
+    .price {
+        font-size: 1.2em;
+       margin-top: -5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #d9534f;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: bold;
+      
+    }
+    
+    .duration::before {
+        content: "\1F553"; /* Emoji de reloj */
+        margin-right: 8px;
+        color:#d9534f;
+    }
+    
+    .cost {
+        margin-left: 8px;
+        color: #d9534f;
+        font-weight: bold;
+    }
+    
+    .cost::before {
+        content: "\1F4B5"; /* Emoji de dinero */
+        margin-right: 5px;
+    }
+    
 
 footer {
     position: static;
@@ -601,4 +763,4 @@ footer {
         margin-left: 0;
     }
 }    
-
+    
