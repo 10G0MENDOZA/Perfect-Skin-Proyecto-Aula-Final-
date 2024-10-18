@@ -1,0 +1,142 @@
+.section-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.image-container {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.image-container img {
+    width: 50%;
+    height: auto;
+    box-shadow: -26px -25px 12px -5px rgba(255,178,178,0.75);
+    -webkit-box-shadow: -26px -25px 12px -5px rgba(255,178,178,0.75);
+    -moz-box-shadow: -26px -25px 12px -5px rgba(255,178,178,0.75);
+}
+
+.overlay {
+    position: relative;
+    margin-top: -20%;
+    left: 40%;
+    transform: translate(10%, -50%);
+    background-color:#FEF1EF; /* color rosado */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 800px;
+}
+
+.hours {
+    text-align: center;
+}
+
+.open-hours {
+    background-color: #f69488;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display:inline-block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    right: 20%;
+}
+.open-hours p{
+    text-align: center;
+
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 700 !important;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+
+
+}
+
+.schedule {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.schedule li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+.schedule li span {
+    font-weight: bold;
+
+}
+
+.button1 {
+    margin-top: 0; /* Espacio entre el precio y el botón */
+    display: inline-block; /* Para que el botón respete el margen */
+    padding: 5px 10px; /* Tamaño del botón */
+   text-align: center; /* Centrar el texto */
+    text-decoration: none; /* Sin subrayado */
+    --color: #f79898;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.0em;
+    line-height: 1.5em;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    
+    transition: color 0.5s;
+    z-index: 1;
+    
+    border-radius: 6px;
+    font-weight: 200px;
+    color: white;
+    background: #f69488;
+}
+
+.button1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background:#f86161;
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  .button1:hover {
+    color: #fff;
+  }
+  
+  .button1:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  
+  .button1:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  .button1:active:before {
+    background: #f14e4e;
+    transition: background 0s;
+  }

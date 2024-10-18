@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    font-family: "Cormorant Garamond", serif;
+   
+}
+
+
+body{
+  
+    width: 100%;
+    height: 100vh;
+    
+    
+  
+}
+
+header{
+    top:0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.1);
+     min-height: 100vh;
+    position: sticky;
+    margin-top: 0;
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+
+video{
+    position:absolute;
+    top:5%;
+    left:0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.capa{
+    position:absolute;
+    top:5%;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: #1c1c1d;
+    opacity: 0.3;
+    mix-blend-mode: overlay;
+
+    
+}
+nav{
+    padding: 0 50px;
+    width: 100%;
+
+
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+}
+
+.navbar-one {
+    background-color:  #FEF1EF;
+    color:rgb(0, 0, 0);
+    height: 40px;
+    
+    object-fit: cover;
+    z-index: 2;
+   
+    
+    
+    
+    
+    
+}
+.left > div + div{
+    margin-left: 40px;
+    height: 20px;
+    
+    
+}
+.left div{
+    height: 20px;
+    
+}
+.rigth > div{
+    margin-left: 25px;
+}
+span{
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+/* Navbar contenedor principal */
+.navbar-second {
+    height: 150px;
+    position: fixed;
+    z-index: 1000;
+     background-color:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:18px  30px;
+    top: 33px;
+    z-index: 1000;
+    
+}
+
+
+.navbar-second.scrolled {
+    background-color:  #ea919198; /* Fondo oscuro al hacer scroll */
+    box-shadow: 0 4px 8px rgba(248, 9, 9, 0.2); /* Añade sombra */
+    padding: 18px 30px;
+    top:0;
+    transition: all 0.5s ease-in-out;
+    position: fixed;
+    
+}
+.navbar-second.scrolled ul.navlinks li a{
+    color:white;
+    background-color:  #ea8787;
+}
+/* Estilos del carrito cuando se desplaza con el scroll */
+
+
+
+/* Logo en la izquierda */
+.logo img {
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+     margin-top: 10px;
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Efecto de zoom suave en hover */
+}
+
+/* Estilos del menú */
+ul.navlinks {
+    list-style: none;
+   
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    margin-right: 20%;
+}
+
+ul.navlinks li {
+    position: relative;
+}
+
+
+ul.navlinks li a {
+    font-family: 'Poppins', sans-serif; /* Tipografía moderna */
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    /* Fondo translúcido */
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacio entre el ícono y el texto */
+    box-shadow: 0 4px 6px rgba(163, 6, 6, 0.1);
+}
+
+ul.navlinks li a:hover {
+    background-color: rgb(245, 152, 152);
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Separadores entre los elementos */
+ul.navlinks li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    width: 6px;
+    height: 6px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+
+
+.facebook i {
+    color: #f09494; 
+    font-size: 23px; /* Tamaño del ícono */
+    transition: color 0.3s ease;
+    gap:8px;
+    
+    
+}
+
+.instagram i {
+    color:#f09494; /* Naranja-rosado de Instagram */
+    font-size: 23px;
+    transition: color 0.3s ease;
+}
+
+.whatsapp i{
+    color:#f09494; /* Naranja-rosado de Instagram */
+    font-size: 23px;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover para cambiar de color cuando se pasa el cursor */
+.facebook i:hover {
+    color:#0323ee; /* Un azul más oscuro al hacer hover */
+}
+
+.instagram i:hover {
+    color: #ff0e0e; /* Un tono más oscuro para Instagram al hacer hover */
+}
+.whatsapp i:hover{
+    color:#4bff04;
+}
+
+.goog-te-banner-frame.skiptranslate, 
+.goog-te-gadget-icon {
+    display: none !important;
+}
+
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 25px;
+    margin-left: 30px;
+    color:#000;
+    font-weight:400;
+    position: relative;
+    
+}
+    
+.email i {
+    color: #f09494; /* Color pastel para el ícono de email */
+    font-size: 18px; /* Tamaño del ícono */
+    transition: color 0.3s ease; /* Transición suave en hover */
+}
+.email span {
+    font-size: 15px;
+    color: #333; /* Color del texto */
+}
+.call i {
+    color: #f09494; /* Color pastel para el ícono de teléfono */
+    font-size: 18px;
+    transition: color 0.3s ease; /* Transición suave en hover */
+}
+.call span {
+    font-size: 15px;
+    color: #333;
+}
+.email:hover i,
+.call:hover i {
+    color: #f63f3f ; /* Cambia a un color más oscuro al hacer hover */
+}
+@media (max-width: 768px) {
+    .navbar-second {
+        flex-direction: column;
+    }
+
+    .menu {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+/* From Uiverse.io by vinodjangid07 */ 
+.subscription-form button{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(to right,#bf953f,#fcf6ba,#b38728,#fbf5b7,#aa771c);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 0.8em;
+    color: rgb(121, 103, 3);
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition-duration: 3s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.144);
+    background-size: 200% 200%;
+  }
+  
+  .logoIcon path {
+    fill: rgb(121, 103, 3);
+  }
+  
+  .subscription-form button:hover {
+    transform: scale(0.95);
+    transition-duration: 3s;
+    animation: gradient 5s ease infinite;
+    background-position: right;
+  }
+
+  
+.modal {
+    display: block; /* Lo muestra inmediatamente */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.9); /* Fondo semitransparente */
+}
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    background-color:#fce6f1;
+   
+    background-position: center;
+    max-width: 900px;
+    max-height: 250px;
+    border-radius: 0px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15%;
+    
+}
+.background-image {
+     
+       /* Cambia esta ruta por la correcta */
+        background-size: cover; /* Asegura que la imagen cubra todo el área */
+        background-position: center;
+        width: 40%; /* Ajusta el tamaño según sea necesario */
+        height: 100%; /* O puedes ajustarlo según el diseño */
+        border-radius: 10px ; /* Para que los bordes coincidan con el modal */
+    }
+    /* Ajusta este tamaño según tu imagen */
+
+.text-content {
+    padding: 20px;
+    color: #000;
+    /* Espacio entre el input y el botón */
+    
+}
+.text-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.text-content input {
+    padding: 10px;
+    width: 80%;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+    
+
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    color: #000000;
+}
+.form-control{
+    display : block;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428557143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border-radius: 4px;
+    height: 40px;
+    width: 200px;
+    
+}
+.subscription-form {
+    display: flex;
+    gap: 10px; /* Espacio entre el input y el botón */
+    align-items: center; /* Alinea verticalmente */
+}
+
+.subscription-form input {
+ /* Ajusta el tamaño del input para que sea flexible */
+    padding: 10px;
+}
+
+
+  
+
+@keyframes underline {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80px;
+    }
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

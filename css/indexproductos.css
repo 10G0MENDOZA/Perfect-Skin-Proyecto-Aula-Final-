@@ -1,0 +1,199 @@
+
+/* General Styles */
+.servicios-section {
+    padding: 50px 0;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: -100px;
+}
+.servicio-descripcion{
+    display: flex;
+    flex-direction: column; /* Alinea elementos en columna */
+    justify-content: space-between;
+    padding-left: 20px;
+    max-width: 500px;
+    width: 100%;
+}
+
+
+
+.servicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 950px;
+    margin-top: 5%;
+    
+}
+.swiper-slide1 img {
+    width: 100%;           /* Ajusta el ancho de la imagen al contenedor */
+    height: 300px;         /* Define una altura fija */
+    object-fit: cover;     /* Hace que la imagen se ajuste sin distorsionarse */
+    object-position: center; /* Centra la imagen dentro de su contenedor */
+    box-shadow: 0 10px 40px #f29191;
+    left:30%
+}
+.servicio-imagen img {
+    width: 200px;
+    border-radius: 10px;
+    margin-left: 50%; 
+}
+.header-productos {
+    text-align: center;
+   /* Ajusta el margen según lo necesites */
+    position: static;
+    
+    
+}
+
+.header-productos h2 {
+    font-size: 3rem; /* Tamaño grande y llamativo */
+    color: #333; /* Color principal, puedes cambiarlo */
+    font-weight: bold;
+    letter-spacing: 4px; /* Espaciado entre letras */
+    text-transform: uppercase; /* Convierte a mayúsculas */
+    position: relative;
+    z-index: 1;
+    
+  
+   
+   
+    
+}
+
+.header-productos h2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 120px; /* Puedes cambiar el largo de la línea */
+    height: 5px; /* Espesor de la línea */
+    background-color: #ee8a8a; /* Color de la línea */
+    z-index: -1;
+    border-radius: 50px; /* Para un efecto de línea redondeada */
+}
+
+.header-productos h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -25px;
+    width: 80px;
+    height: 5px;
+    background-color: #333; /* Segundo color para un efecto dual */
+    z-index: -1;
+    opacity: 0.5; /* Efecto sutil */
+    border-radius: 50px;
+}
+
+
+
+.servicio-descripcion h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-right: 30%;
+}
+.servicio-descripcion p {
+    font-size:20px;
+    margin-bottom: 10px;
+      margin-right: 30%;
+      font-weight: bold;
+}
+
+.precio-servicio  {
+    
+        display: absolute;
+        margin-top: 10px;
+        margin-bottom: 10px; /* Espacio entre el precio y el botón */
+        font-size: 18px;
+        color: #333;
+        margin-left: 15%;
+        font-weight: bold;
+   }
+
+.btn-servicio {
+    margin-top: 1px; /* Espacio entre el precio y el botón */
+    display: inline-block; /* Para que el botón respete el margen */
+    padding: 5px 10px; /* Tamaño del botón */
+    background-color: #faa3a3; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    text-decoration: none; /* Sin subrayado */
+    margin-top: 0; /* Espacio entre el precio y el botón */
+    display: inline-block; /* Para que el botón respete el margen */
+    padding: 5px 10px; /* Tamaño del botón */
+   text-align: center; /* Centrar el texto */
+    text-decoration: none; /* Sin subrayado */
+    --color: #f79898;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.0em;
+    line-height: 1.5em;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.5s;
+    z-index: 1;
+    border-radius: 6px;
+    font-weight: 200px;
+    color: white;
+}
+
+.btn-servicio:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background:#f86161;
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  .btn-servicio:hover {
+    color: #fff;
+  }
+  
+  .btn-servicio:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  
+  .btn-servicio:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  .btn-servicio:active:before {
+    background: #f14e4e;
+    transition: background 0s;
+  }
+
+
+.servicios-button-next, .servicios-button-prev {
+    color: #ff0000 !important; /* Cambia el color aquí (por ejemplo, rojo) */
+}
+
+.servicios-button-next, .servicios-button-prev {
+    position: relative;
+    top: 50%; /* Coloca los botones verticalmente centrados */
+    z-index: 10; /* Asegura que los botones estén encima de otros elementos */
+    transform: translateY(-50%); /* Alinea los botones verticalmente */
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco semitransparente */
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.servicios-button-next {
+    right: 0px; /* Muy cerca del borde derecho de la pantalla */
+}
+
+.servicios-button-prev{
+    left: 0px !important; /* Muy cerca del borde izquierdo de la pantalla */
+}
