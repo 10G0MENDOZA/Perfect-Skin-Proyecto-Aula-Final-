@@ -273,16 +273,7 @@ a{
 .call:hover i {
     color: #f63f3f ; /* Cambia a un color más oscuro al hacer hover */
 }
-@media (max-width: 768px) {
-    .navbar-second {
-        flex-direction: column;
-    }
 
-    .menu {
-        justify-content: center;
-        margin-top: 10px;
-    }
-}
 /* From Uiverse.io by vinodjangid07 */ 
 .subscription-form button{
     width: 200px;

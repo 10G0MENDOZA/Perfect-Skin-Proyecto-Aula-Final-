@@ -79,7 +79,7 @@
                 <li><a href="#servicios">Productos</a></li>
 
             </ul>
-            <img src="img/menu.jpeg" alt="" class="menubtn">
+         
         </nav>
        
 
