@@ -1,0 +1,270 @@
+
+.chatbot-toggler{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    height: 50px;
+    width: 50px;
+    color: #f07474;
+    border:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline:none;
+    cursor:pointer;
+    background: #fef8f8;
+    border-radius: 50%;
+    box-shadow: 0 10px 40px #f29191;
+    z-index: 1000;
+}
+
+.chatbot-toggler span{
+   position: absolute;
+}
+.chatbot-toggler span:last-child {
+    display: none;
+}
+
+.show-chatbot .chatbot-toggler span:first-child {
+    display: none;
+}
+
+.show-chatbot .chatbot-toggler span:last-child {
+    display: inline-block;
+}
+
+
+
+.chatbot p {
+    margin: 0; /* Evitar márgenes innecesarios */
+}
+
+
+
+
+
+
+.chatbot{
+
+    position: fixed;
+    width: 420px;
+    background: rgb(253, 209, 209);
+    position: fixed;
+    bottom:  100px;
+    right: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+     z-index: 1000;
+     overflow: hidden;  
+     transform: scale(0.5); 
+     opacity: 0; 
+     pointer-events: none;  
+     height: 500px;
+   
+}
+
+.show-chatbot .chatbot{
+    transform: scale(1);
+    opacity: 1;
+    pointer-events: auto;
+
+}
+
+.chatbot .header h2{
+    background: rgb(239, 135, 135);
+    padding:  16px 0;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+
+h2{
+    color:#fff;
+    font-size: 1.4rem;
+}
+
+.chatbot .header span{
+
+    position:absolute ;
+    right: 20px;
+    top:5%;
+    color: #fff;
+    cursor: pointer;
+    transform: translateY(-50%);
+    display: none;
+  
+
+
+}
+
+.chatbot .chatbox{
+    height: 510px;
+    overflow-y: auto;
+    padding: 15px 20px 190px;
+    
+}
+
+.chatbox .chat {
+    display: flex;
+}
+
+.chatbox  .incoming span{
+    height: 32px;
+    width: 32px;
+    color: #fff;
+    align-self: flex-end;
+    background-color: #e71c1c;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 4px;
+    margin: 0 10px 7px 0;
+    
+
+}
+
+.chatbox .outgoing{
+
+    margin: 20px 0;
+    justify-content: flex-end;
+}
+
+.chatbot p{
+    color:#fff;
+    font-size: 1.21em;
+    padding: 12px 16px;
+    border-radius: 12px 16px;
+    background-color: rgb(245, 82, 82);
+
+}
+
+.chatbot .incoming p{
+    color: #000;
+    background-color: #f2f2f2;
+    border-radius:10px 10px 10px 0 ;
+    padding: 33px;
+    margin-bottom: 15px;
+  
+    
+}
+
+.chatbot .chat-input{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    gap:5px;
+    background-color: #fff;
+    padding: 5px 20px;
+    border-top: 1px solid #ccc;;
+}
+
+.chat-input textarea{
+    height: 55px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    resize: none;
+    padding: 16px 15px 16px 0;
+    color: #000;
+    font-weight: bold;
+}
+
+.chat-input span{
+    align-self: flex-end;
+    height: 55px;
+    line-height: 55px;
+    color: #000;
+    font-size: 2.0rem;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.chat-input textarea:valid ~ span{
+
+    visibility: visible;
+
+}
+.opciones-container {
+    display: flex;
+    flex-direction: column; /* Colocar botones uno debajo del otro */
+    gap: 10px; /* Espacio entre los botones */
+    margin: 10px 0; /* Margen superior e inferior */
+}
+
+.opcion-btn {
+    background-color: #f29191; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 1.1rem; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+    transition: background-color 0.3s, transform 0.2s; /* Animaciones suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra del botón */
+}
+
+.opcion-btn:hover {
+    background-color: #f07474; /* Color de fondo en hover */
+    transform: translateY(-2px); /* Efecto de elevar el botón al pasar el mouse */
+}
+.reserva-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #f07474; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Quitar subrayado */
+    font-weight: bold; /* Negrita */
+    transition: background-color 0.3s; /* Efecto de transición */
+}
+
+.reserva-btn:hover {
+    background-color: #e05252; /* Color al pasar el mouse */
+}
+.enlace {
+    color: #f07474; /* Color */
+    text-decoration: underline; /* Subrayado */
+    font-size: 20px; /* Tamaño de fuente */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+.volver-btn {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #f07474; /* Color del botón */
+    color: #fff; /* Color del texto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.volver-btn:hover {
+    background-color: #d06363; /* Color del botón al pasar el mouse */
+}
+
+
+
+@media(max-width: 490px){
+    .chatbot {
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .chatbot .chatbox{
+        height: 90%;
+    }
+
+    .chatbot .header span{
+
+        display: block;
+
+    }
+}

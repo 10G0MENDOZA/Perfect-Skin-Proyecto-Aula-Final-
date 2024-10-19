@@ -13,11 +13,14 @@
     <link rel="stylesheet" href="css/porqueperfectskin.css">
     <link rel="stylesheet" href="css/horariodeatencion.css">
     <link rel="stylesheet" href="css/indextestimonios.css">
+    <link rel="stylesheet" href="css/chatbot.css">
     <link rel="icon" href="img/LOGO.jpeg">
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+
     
 
 
@@ -108,14 +111,36 @@
         </div>
     </header>
 
-   
-            
+    <button class="chatbot-toggler">
+    <span class="material-symbols-outlined">mode_comment</span>
+    <span class="material-symbols-outlined">close</span>
+</button>
+
+<div class="chatbot">
+    <div class="header">
+        <h2>Perfect Chatbot</h2>
+        <span class="material-symbols-outlined">close</span>
+    </div>
+    <ul class="chatbox">
+        <li class="chat incoming">
+            <!-- Mensajes del chatbot irán aquí -->
+        </li>
+    </ul>
+
+    <!-- Contenedor para las opciones -->
+    <div class="opciones-container">
+        <button class="opcion-btn">Ver Productos</button>
+        <button class="opcion-btn">Ubicación</button>
+        <button class="opcion-btn">Servicios</button>
+        <button class="opcion-btn">Contacto</button>
     </div>
 
-    <div class="ungle">
-        <span class="ir"><i class="arriba fa-solid fa-angles-up" aria-hidden="true"></i></span>
+    <div class="chat-input">
+        <textarea placeholder="Enter a message..." required></textarea>
+        <span id="send-btn" class="material-symbols-outlined">send</span>
     </div>
-  
+</div>
+
 
 
     <div class="music-button">
@@ -491,6 +516,7 @@
                     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
                     <script src="js/swiper_setup.js"></script>
                     <script src="js/swiper_servicios.js"></script>
+                    <script src="js/chatbot.js"></script>
                     
                     <script src="js/musica.js"></script>
                     <script src="js/carousel_Navigation.js"></script>
