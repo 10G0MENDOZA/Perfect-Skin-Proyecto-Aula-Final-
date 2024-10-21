@@ -135,3 +135,45 @@
 .swiper-button-prev {
     left: 0px !important; /* Muy cerca del borde izquierdo de la pantalla */
 }
+@media screen and (max-width: 480px) {
+    .productos-section {
+        width: 100%;
+        top: -40%;
+    }
+
+    .producto {
+        width: 100%;
+        padding: 5px;
+        
+    }
+
+    .producto-imagen img {
+        width: 110px;
+        margin-left: 30%;
+    }
+
+    .producto-descripcion h3 {
+        font-size: 1rem;
+        margin-left: 20%;
+    }
+
+    .producto-descripcion p {
+        font-size: 0.9rem;
+        margin-left: 20%;
+    }
+
+    .producto-descripcion .btn {
+        width: 50%;
+        font-size: 0.8rem;
+        margin: 0 auto;
+       
+    }
+
+    .swiper-slide img {
+        height: 200px;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        padding: 5px; /* Reduce el tamaño de los botones de navegación */
+    }
+}

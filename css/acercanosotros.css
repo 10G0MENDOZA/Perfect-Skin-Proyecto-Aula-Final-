@@ -257,4 +257,131 @@
     transition: background 0s;
   }
     
+/* Estilos responsivos */
+
+/* Para pantallas grandes */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+
+    .header-nosotros h1, .header-servicios h2 {
+        font-size: 2rem;
+    }
+
+    .container .slide .item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Para tablets */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+    .slide .item:nth-child(3){
+        left: 110%;
+        z-index: 1000;
+    }
+
+    .header-nosotros h1, .header-servicios h2 {
+        font-size: 1.6rem;
+        margin-top: 20%;
+    }
+
+    .container .slide .item {
+        height: auto; /* Adaptativo */
+        width: 100%;
+        margin-bottom: 50px;
+        margin-top: 90px;
+
+       
+    }
+
+    .content .name {
+        font-size: 1.3rem;
+    }
+
+    .content .des {
+        font-size: 0.9rem;
+        margin-left: 50%;
+    }
+
+    .button button {
+        width: 4em;
+        font-size: 0.8rem;
+        margin-top: -100px;
+    }
+}
+
+/* Para móviles medianos */
+@media screen and (max-width: 480px) {
+
+    .container{
+        position: relative;
+        margin-top: 65%;
+    }
     
+    .header-nosotros h1, .header-servicios h2 {
+        font-size: 1.4rem;
+    }
+    .slide .item:nth-child(3){
+        left: 110%;
+        z-index: 1000;
+    }
+    
+
+    .container .slide .item {
+        height: 80%;
+        width: 100%;
+      
+
+    }
+
+    .name {
+        font-size: 1.2rem;
+        margin-top: -70%;
+        color: #000000;
+    }
+
+    .content .des {
+        font-size: 1.0rem;
+        margin-left: -20%;
+        height: 20%;
+        margin-top: 5%;
+        color: #000000;
+    }
+
+    .button button {
+        width: 6.0em;
+        font-size: 0.75rem;
+        
+      
+    }
+}
+
+/* Para móviles pequeños */
+@media screen and (max-width: 320px) {
+    .header-nosotros h1, .header-servicios h2 {
+        font-size: 1.2rem;
+    }
+
+    .container .slide .item {
+        height: 180px;
+    }
+
+    .content .name {
+        font-size: 1rem;
+    }
+
+    .content .des {
+        font-size: 0.7rem;
+    }
+
+    .button button {
+        width: 3em;
+        font-size: 0.7rem;
+        
+    }
+}

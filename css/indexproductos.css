@@ -197,3 +197,57 @@
 .servicios-button-prev{
     left: 0px !important; /* Muy cerca del borde izquierdo de la pantalla */
 }
+
+@media screen and (max-width: 480px) {
+    .servicios-section {
+        width: 100%; /* Ancho completo en pantallas pequeñas */
+        top: -30%;
+        position: relative;
+    }
+
+    .servicio {
+        padding: 5px; /* Reduce el padding */
+        top: -80%;
+        width: 100%;
+    }
+
+    .servicio-imagen img {
+        width: 110px;
+        margin-left: 30%; /* Ajusta el tamaño de la imagen */
+    }
+
+    .header-productos h2{
+        font-size: 1.5rem;
+        /* Ajusta el tamaño del texto */
+    
+    }
+
+    .servicio-descripcion h3{
+        font-size: 1rem;
+        margin-left: 20%;
+    }
+
+    .servicio-descripcion p {
+        font-size: 0.9rem; /* Ajusta el tamaño del texto */
+        margin-left: 20%;
+    }
+
+    .precio-servicio {
+        font-size: 14px; /* Reduce el tamaño del precio */
+        margin-left: 30%;
+    }
+
+    .btn-servicio {
+        width: 50%;
+        font-size: 0.8rem;
+        margin: 0 auto;
+    }
+
+    .swiper-slide1 img {
+        height: 200px; /* Ajusta la altura de la imagen en el slider */
+    }
+
+    .servicios-button-next, .servicios-button-prev {
+        padding: 2px; /* Reduce el tamaño de los botones de navegación */
+    }
+}

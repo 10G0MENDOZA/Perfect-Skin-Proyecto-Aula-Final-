@@ -140,3 +140,47 @@ p {
     background: #f14e4e;
     transition: background 0s;
   }
+  @media screen and (max-width: 480px) {
+    .open-hours {
+        font-size: 16px; /* Ajustar aún más el tamaño */
+    }
+
+    h2 {
+        font-size: 18px; /* Ajustar aún más el tamaño */
+        color: black;
+    }
+
+    p {
+        font-size: 12px; /* Ajustar aún más el tamaño */
+    }
+
+    .button1 {
+        width: 50%; /* Mantener el ancho */
+    }
+
+    .overlay {
+        width: 70%; /* Cambia a 90% en pantallas más pequeñas */
+        left: 25%; /* Centra el overlay */
+    }
+    .image-container img{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .open-hours {
+        font-size: 18px; /* Ajustar aún más el tamaño */
+    }
+
+    h2 {
+        font-size: 20px; /* Ajustar aún más el tamaño */
+        color:black;
+    }
+
+    p {
+        font-size: 14px; /* Ajustar el tamaño del párrafo */
+    }
+
+    .button1 {
+        margin: 10px 0; /* Ajustar márgenes */
+    }
+}

@@ -1,5 +1,6 @@
 .porque-perfectskin-section {
     padding: 50px 0;
+    position: relative;
   
 }
 
@@ -9,6 +10,7 @@
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
    
 }
 
@@ -50,3 +52,27 @@
     
     box-shadow: 10 10px 20px 40px  #f29191;
 }
+
+@media screen and (max-width: 480px) {
+    .porque-perfectskin-section{
+        position: relative;
+        margin-top: -25px;
+    }
+
+   
+    
+    .left-content h2 {
+        font-size: 24px; /* Tamaño aún más pequeño para móviles */
+    }
+
+    .left-content p {
+        font-size: 16px; /* Tamaño aún más pequeño para el texto */
+    }
+
+ 
+        .perfectskin-image {
+            width: 170%; /* Ajustar aún más el ancho */
+            top: -100%; /* Mover más arriba si es necesario */
+            margin-left: -50%;
+        }
+    }
