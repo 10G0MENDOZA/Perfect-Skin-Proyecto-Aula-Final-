@@ -23,47 +23,6 @@
   
 
   
-.ungle .ir{
-    display: none;
-}
-
-
-.ungle .arriba{
-    color:rgb(249, 80, 80);
-    border: 1px solid rgb(248, 207, 192);
-    padding: 10px;
-    width: 50px;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    position:fixed;
-    bottom: 15px;
-    left: 95%;
-    cursor: pointer;
-    background-color: #f4b2b2;
-    
-    transition: .5s all ease;
-    animation: subir 1s infinite alternate;
-}
-
-.ungle .arriba:hover{
-    transform: scale(1.05);
-    background:#f89191 ;
-    color: rgb(249,80,80);
-
-}
-
-    
-@keyframes subir{
-    0%{
-        transform: translateY(0);
-    }
-
-    100%{
-        transform:translateY(-15px);
-    }
-   
-}
 
 
 

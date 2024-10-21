@@ -241,6 +241,7 @@ h2{
     cursor: pointer;
     font-size: 20px;
     transition: background-color 0.3s;
+    
 }
 
 .volver-btn:hover {

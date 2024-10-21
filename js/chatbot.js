@@ -83,6 +83,7 @@ const responses = {
     - Gel Limpiador Facial: $35,000 COP<br>
     - Toallitas Desmaquillantes: $100,000 COP<br><br>
     ¿Te gustaría comprar alguno de ellos?
+     <a href="productos.php" class="reserva-btn">Compra aqui</a>
     `,
 };
 

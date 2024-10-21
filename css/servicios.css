@@ -126,7 +126,7 @@ body {
 }
 .card {
     width: 500px; /* Mantén el ancho según tus necesidades */
-    height: 450px; /* Ajusta la altura según tus necesidades */
+    height: 500px; /* Ajusta la altura según tus necesidades */
     margin: 20px; /* Espaciado alrededor de las tarjetas */
     padding: 0px; /* Espaciado interno */
     border: 1px solid #ccc; /* Borde para las tarjetas */
@@ -140,7 +140,7 @@ body {
 
 .card img {
     width: 100%;
-    height: 50%;
+    height: 70%;
     
     border-top-left-radius: 8px; /* Redondea la esquina superior izquierda */
     border-top-right-radius: 8px;

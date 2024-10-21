@@ -26,36 +26,36 @@
     <div class="container">
         <div class="card-group" id="group1">
             <div class="card" id="card1">
-                <img src="img/facialclasico.jpg" alt="Jet Lag S.O.S">
-                <h3>Facial Clásico</h3>
+                <img src="img/protectorsolar.jpg" alt="Jet Lag S.O.S" >
+                <h3>Protector Solar</h3>
                 <button onclick="showModal('modal1')">Ver más</button>
             </div>
             <div class="card" id="card2">
-                <img src="img/diamante.jpg" alt="Masaje con nuez de coco" class="imagen1">
-                <h3>Facial Diamante</h3>
+                <img src="img/antiarrugas.png" alt="Masaje con nuez de coco" class="imagen1">
+                <h3>Antiarrugas</h3>
                 <button onclick="showModal('modal2')">Ver más</button>
             </div>
             <div class="card" id="card3">
-                <img src="img/luminous.jpg" alt="Luminous Face">
-                <h3>Luminous Face</h3>
+                <img src="img/aguamiselar.jpg" alt="Luminous Face">
+                <h3>Agua micelar</h3>
                 <button onclick="showModal('modal3')">Ver más</button>
             </div>
         </div>
 
         <div class="card-group" id="group2" style="display:none;">
             <div class="card" id="card4">
-                <img src="img/Dermaplaning-Facial.jpg" alt="Luminous Face">
-                <h3>Dermaplaning</h3>
+                <img src="img/hydrobost.jpg" alt="Luminous Face">
+                <h3>Serum Hidratante</h3>
                 <button onclick="showModal('modal4')">Ver más</button>
             </div>
             <div class="card" id="card5">
-                <img src="img/masaje.jpg" alt="Masaje Relajante">
-                <h3>Masaje Relajante</h3>
+                <img src="img/gellimpiador.jpg" alt="Masaje Relajante">
+                <h3>Gel Limpiador Facial</h3>
                 <button onclick="showModal('modal5')">Ver más</button>
             </div>
             <div class="card" id="card6">
-                <img src="img/hidralips.webp" alt="Hidralips">
-                <h3>Hidralips</h3>
+                <img src="img/desmaquillante.jpg" alt="Hidralips">
+                <h3>Toallitas desmaquillantes faciales</h3>
                 <button onclick="showModal('modal6')">Ver más</button>
             </div>
         </div>
@@ -70,67 +70,97 @@
 <!-- Modales para cada tarjeta -->
 <div id="modal1" class="modal">
     <div class="modal-content">
-        <img src="img/facialclasico.jpg" alt="Jet Lag S.O.S" class="modal-img">
+        <img src="img/protectorsolar.jpg" alt="Jet Lag S.O.S" class="modal-img">
         <span class="close" onclick="hideModal('modal1')">&times;</span>
-        <h2>Facial Clásico</h2>
-        <p>Descripción del servicio Facial Clásico.</p>
-        <p>1 HORA - $80.000 COP</p>
-        <a href="agendar_citas.php?servicio=Facial%20Clásico&precio=166600" class="button">Reservar</a>
+        <h2>Protector solar</h2>
+        <p class="benefits-title">Beneficios:</p>
+        <ul class="benefits-list">
+            <li>Reduce la aparición de poros y arrugas.</li>
+            <li>Mejora la textura y la elasticidad de la piel.</li>
+            <li>Deja la piel con un aspecto más suave y radiante.</li>
+        </ul>
+        <p class="price"><span class="cost">$80.000 COP</span></p>
+        <a href="agendar_citas.php?servicio=Facial%20Clásico&precio=166600" class="button">Comprar</a>
     </div>
 </div>
 
 <div id="modal2" class="modal">
     <div class="modal-content">
-        <img src="img/diamante.jpg" alt="Facial Diamante" class="modal-img1">
+        <img src="img/antiarrugas.png" alt="Facial Diamante" class="modal-img">
         <span class="close" onclick="hideModal('modal2')">&times;</span>
-        <h2>Facial Diamante</h2>
-        <p>Descripción detallada del servicio Facial Diamante.</p>
-        <p>1 HORA - $70.000 COP</p>
-        <a href="agendar_citas.php?servicio=Facial%20Diamante&precio=70.000" class="button">Reservar</a>
+        <h2>Antiarrugas</h2>
+        <p class="benefits-title">Beneficios:</p>
+        <ul class="benefits-list">
+            <li>Reduce la aparición de poros y arrugas.</li>
+            <li>Mejora la textura y la elasticidad de la piel.</li>
+            <li>Deja la piel con un aspecto más suave y radiante.</li>
+        </ul>
+        <p class="price"><span class="cost">$80.000 COP</span></p>
+        <a href="agendar_citas.php?servicio=Facial%20Diamante&precio=70.000" class="button">Comprar</a>
     </div>
 </div>
 
 <div id="modal3" class="modal">
     <div class="modal-content">
-        <img src="img/luminous.jpg" alt="Luminous Face" class="modal-img">
+        <img src="img/aguamiselar.jpg" alt="Luminous Face" class="modal-img">
         <span class="close" onclick="hideModal('modal3')">&times;</span>
-        <h2>Luminous Face</h2>
-        <p>Descripción detallada del servicio Luminous Face.</p>
-        <p>1 HORA - $100.000 COP</p>
-        <a href="agendar_citas.php?servicio=Luminous%20Face&precio=.100.000" class="button">Reservar</a>
+        <h2>Agua miselar</h2>
+        <p class="benefits-title">Beneficios:</p>
+        <ul class="benefits-list">
+            <li>Reduce la aparición de poros y arrugas.</li>
+            <li>Mejora la textura y la elasticidad de la piel.</li>
+            <li>Deja la piel con un aspecto más suave y radiante.</li>
+        </ul>
+        <p class="price"><span class="cost">$80.000 COP</span></p>
+        <a href="agendar_citas.php?servicio=Luminous%20Face&precio=.100.000" class="button">Comprar</a>
     </div>
 </div>
 
 <div id="modal4" class="modal">
     <div class="modal-content">
-        <img src="img/Dermaplaning-Facial.jpg" alt="Dermaplaning" class="modal-img">
+        <img src="img/hydrobost.jpg" alt="Dermaplaning" class="modal-img">
         <span class="close" onclick="hideModal('modal4')">&times;</span>
-        <h2>Dermaplaning</h2>
-        <p>Descripción detallada del servicio Dermaplaning.</p>
-        <p> 1 HORA- $90.000 COP</p>
-        <a href="agendar_citas.php?servicio=Dermaplaning&precio=90.000" class="button">Reservar</a>
+        <h2>Hydrobost</h2>
+        <p class="benefits-title">Beneficios:</p>
+        <ul class="benefits-list">
+            <li>Reduce la aparición de poros y arrugas.</li>
+            <li>Mejora la textura y la elasticidad de la piel.</li>
+            <li>Deja la piel con un aspecto más suave y radiante.</li>
+        </ul>
+        <p class="price"><span class="cost">$80.000 COP</span></p>
+        <a href="agendar_citas.php?servicio=Dermaplaning&precio=90.000" class="button">Comprar</a>
     </div>
 </div>
 
 <div id="modal5" class="modal">
     <div class="modal-content">
-        <img src="img/masaje.jpg" alt="Masaje Relajante" class="modal-img">
+        <img src="img/gellimpiador.jpg" alt="Masaje Relajante" class="modal-img">
         <span class="close" onclick="hideModal('modal5')">&times;</span>
-        <h2>Masaje Relajante</h2>
-        <p>Descripción detallada del servicio Masaje relajante.</p>
-        <p>1 HORA - $120.000 COP</p>
-        <a href="agendar_citas.php?servicio=Masaje%20Relajante&precio=120.000" class="button">Reservar</a>
+        <h2>Gel limpiador</h2>
+        <p class="benefits-title">Beneficios:</p>
+        <ul class="benefits-list">
+            <li>Reduce la aparición de poros y arrugas.</li>
+            <li>Mejora la textura y la elasticidad de la piel.</li>
+            <li>Deja la piel con un aspecto más suave y radiante.</li>
+        </ul>
+        <p class="price"><span class="cost">$80.000 COP</span></p>
+        <a href="agendar_citas.php?servicio=Masaje%20Relajante&precio=120.000" class="button">Comprar</a>
     </div>
 </div>
 
 <div id="modal6" class="modal">
     <div class="modal-content">
-        <img src="img/hidralips.webp" alt="Hidralips" class="modal-img">
+        <img src="img/desmaquillante.jpg" alt="Hidralips" class="modal-img">
         <span class="close" onclick="hideModal('modal6')">&times;</span>
-        <h2>Hidralips</h2>
-        <p>Descripción detallada del servicio Hidralips.</p>
-        <p>1 HORA - $85.000 COP</p>
-        <a href="agendar_citas.php?servicio=Hidralips&precio=85.000" class="button">Reservar</a>
+        <h2>Desmaquillante</h2>
+        <p class="benefits-title">Beneficios:</p>
+        <ul class="benefits-list">
+            <li>Reduce la aparición de poros y arrugas.</li>
+            <li>Mejora la textura y la elasticidad de la piel.</li>
+            <li>Deja la piel con un aspecto más suave y radiante.</li>
+        </ul>
+        <p class="price"><span class="cost">$80.000 COP</span></p>
+        <a href="agendar_citas.php?servicio=Hidralips&precio=85.000" class="button">comprar</a>
     </div>
 </div>
 
