@@ -309,7 +309,8 @@ a{
 
   
 .modal {
-    display: block; /* Lo muestra inmediatamente */
+    opacity: 0;
+    visibility: hidden; /* Oculto por defecto */
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -318,6 +319,11 @@ a{
     height: 100%;
     background-color:rgba(0, 0, 0, 0.9); /* Fondo semitransparente */
 }
+.modal.show {
+    opacity: 1;
+    visibility: visible; /* Mostrar el modal */
+}
+
 .modal-content {
     position: relative;
     margin: auto;
