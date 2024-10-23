@@ -49,22 +49,10 @@
         <li><a href="configuracion.php"><i class='bx bx-cog'></i> Configuración</a></li>
         <li><a href="crearusuario.php"><i class='bx bx-user'></i> Crear Usuarios</a></li>
         <li><a href="citasahendadas.php"><i class='bx bx-user'></i> Citas  </a></li>
-        <!-- <li><a href= "#productos">Usarios</a></li>  -->
+        <<li><a href= "#productos">Usarios</a></li>
         
 </ul>
-<!-- </nav>
 
-    <div class="menu-button-container">
-    <button id="show-options-button" onclick="toggleOptions()"><i class='bx bx-menu'></i> Menú</button>
-    </div>
-    <div class="options" id="options">
-        
-        <a href="servicios.php"><i class='bx bx-wrench'></i> Buscar clientes</a>
-        <a href="configuracion.php"><i class='bx bx-cog'></i> Configuración</a>
-        <a href="crearusuario.php"><i class='bx bx-user'></i> Crear Usuarios</a>
-    </div>
-    <script src="js/administrador.js"></script>
-     <script src="js/inactividad.js"></script> --> 
 </body>
 
 </html>
