@@ -531,6 +531,55 @@
     
 
                         </script>    
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Verifica si el modal ya ha sido mostrado en la sesión actual
+    if (!sessionStorage.getItem("modalShown")) {
+      // Si no se ha mostrado, añade la clase "show" para mostrarlo
+      document.querySelector(".modal").classList.add("show");
+
+      // Marca el modal como mostrado en esta sesión
+      sessionStorage.setItem("modalShown", "true");
+    }
+
+    // Cierra el modal cuando el usuario haga clic en el botón de cerrar
+    document.querySelector(".close").addEventListener("click", function() {
+      document.querySelector(".modal").classList.remove("show");
+    });
+  });
+</script>
+<script>
+const slides = document.querySelectorAll('.item');
+let currentIndex = 0;
+
+// Mostrar el slide actual
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === index) {
+            slide.classList.add('active');
+        }
+    });
+}
+
+// Botón siguiente
+document.querySelector('.next').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+});
+
+// Botón anterior
+document.querySelector('.prev').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+});
+
+// Inicializar mostrando el primer slide
+showSlide(currentIndex);
+
+</script>
+
+ 
                         
                         
   

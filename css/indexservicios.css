@@ -74,10 +74,10 @@
     position: relative;
     cursor: pointer;
     overflow: hidden;
-    
+    background-color: #faa3a3; /* Color de fondo */
     transition: color 0.5s;
     z-index: 1;
-    background: #f77171;
+  
     border-radius: 6px;
     font-weight: 200px;
     color: white;
